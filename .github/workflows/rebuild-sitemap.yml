@@ -5,7 +5,9 @@ on:
     branches:
       - main
     paths:
-      - 'src/data/blogPosts.ts'
+      - 'src/data/blogPosts*.ts'
+      - 'src/data/cityPages.ts'
+      - 'src/data/blogClusters.ts'
 
 jobs:
   rebuild-sitemap:
@@ -50,73 +52,66 @@ jobs:
             'san-francisco',
           ];
 
-          // Parse blogPosts.ts
-          const raw = fs.readFileSync('src/data/blogPosts.ts', 'utf-8');
+          // Parse all blogPosts files for slugs and dates
+          const files = [
+            'src/data/blogPosts.ts',
+            'src/data/blogPosts-batch2.ts',
+            'src/data/blogPosts-batch3.ts',
+            'src/data/blogPosts-batch4.ts',
+          ];
+
           const posts = [];
-          const arrayMatch = raw.match(/blogPosts:\s*BlogPost\[\]\s*=\s*\[([\s\S]*?)\];/);
-          if (arrayMatch) {
-            const objRegex = /\{\s*slug:\s*[\"']([^\"']+)[\"'][\s\S]*?\}/g;
-            let m;
-            while ((m = objRegex.exec(arrayMatch[1])) !== null) {
-              const block = m[0];
-              const slug = m[1];
-              const cluster = (block.match(/cluster:\s*[\"']([^\"']+)[\"']/) || [])[1] || '';
-              posts.push({ slug, cluster });
-            }
-          }
-
-          // Build URL entries
-          const urls = [];
-
-          function addUrl(loc, changefreq, priority) {
-            // Verify no double-path
-            const path = loc.replace(DOMAIN, '');
-            if (/\/blog\/blog\//.test(path)) {
-              console.error('ERROR: Double-path detected: ' + loc);
-              process.exit(1);
-            }
-            urls.push({ loc, changefreq, priority });
-          }
-
-          // Homepage
-          addUrl(DOMAIN + '/', 'weekly', '1.0');
-
-          // Blog index
-          addUrl(DOMAIN + '/blog', 'daily', '0.9');
-
-          // Cluster pages
-          CLUSTER_SLUGS.forEach(function(cs) {
-            addUrl(DOMAIN + '/blog/' + cs, 'weekly', '0.8');
-          });
-
-          // City pages
-          CITY_SLUGS.forEach(function(city) {
-            addUrl(DOMAIN + '/' + city, 'monthly', '0.7');
-          });
-
-          // Article pages
-          posts.forEach(function(p) {
-            if (p.cluster) {
-              addUrl(DOMAIN + '/blog/' + p.cluster + '/' + p.slug, 'monthly', '0.7');
-            } else {
-              addUrl(DOMAIN + '/blog/' + p.slug, 'monthly', '0.7');
+          files.forEach(function(file) {
+            try {
+              const raw = fs.readFileSync(file, 'utf-8');
+              const slugMatches = raw.matchAll(/slug:\s*[\"']([^\"']+)[\"']/g);
+              const dateMatches = [...raw.matchAll(/publishedDate:\s*[\"']([^\"']+)[\"']/g)];
+              let i = 0;
+              for (const m of slugMatches) {
+                if (m[1] === 'string') continue; // skip interface definition
+                const date = dateMatches[i] ? dateMatches[i][1] : '2026-03-08';
+                posts.push({ slug: m[1], date: date });
+                i++;
+              }
+            } catch(e) {
+              console.log('Skipping ' + file + ': ' + e.message);
             }
           });
 
           // Build XML
           let xml = '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n';
           xml += '<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n';
-          urls.forEach(function(u) {
+
+          function addUrl(loc, lastmod) {
             xml += '  <url>\n';
-            xml += '    <loc>' + u.loc + '</loc>\n';
-            xml += '    <changefreq>' + u.changefreq + '</changefreq>\n';
-            xml += '    <priority>' + u.priority + '</priority>\n';
+            xml += '    <loc>' + loc + '</loc>\n';
+            if (lastmod) xml += '    <lastmod>' + lastmod + '</lastmod>\n';
             xml += '  </url>\n';
+          }
+
+          // Static pages
+          addUrl(DOMAIN + '/');
+          addUrl(DOMAIN + '/blog');
+
+          // Cluster pages
+          CLUSTER_SLUGS.forEach(function(cs) {
+            addUrl(DOMAIN + '/blog/topic/' + cs);
           });
+
+          // City pages
+          CITY_SLUGS.forEach(function(city) {
+            addUrl(DOMAIN + '/' + city);
+          });
+
+          // Article pages
+          posts.forEach(function(p) {
+            addUrl(DOMAIN + '/blog/' + p.slug, p.date);
+          });
+
           xml += '</urlset>\n';
 
           fs.writeFileSync('public/sitemap.xml', xml, 'utf-8');
-          console.log('Sitemap rebuilt with ' + urls.length + ' URLs (' + posts.length + ' articles)');
+          console.log('Sitemap rebuilt with ' + (2 + CLUSTER_SLUGS.length + CITY_SLUGS.length + posts.length) + ' URLs (' + posts.length + ' articles)');
           "
 
       - name: Check for changes and commit
