@@ -58,6 +58,8 @@ jobs:
             'src/data/blogPosts-batch2.ts',
             'src/data/blogPosts-batch3.ts',
             'src/data/blogPosts-batch4.ts',
+            'src/data/blogPosts-batch5.ts',
+            'src/data/blogPosts-batch6.ts',
           ];
 
           const posts = [];
