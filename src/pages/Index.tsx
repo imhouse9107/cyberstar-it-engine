@@ -2,8 +2,8 @@ import { Helmet } from "react-helmet-async";
 import { Shield, Phone, Server, ArrowRight } from "lucide-react";
 
 const organizationSchema = {
-  "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://cyberstarit.com/#organization",
   name: "Cyberstar IT",
   url: "https://cyberstarit.com",
   description:
@@ -24,6 +24,40 @@ const organizationSchema = {
   },
 };
 
+const webSiteSchema = {
+  "@type": "WebSite",
+  name: "Cyberstar IT",
+  url: "https://cyberstarit.com",
+  description:
+    "Trusted IT & cybersecurity solutions for US small and medium businesses.",
+  publisher: { "@id": "https://cyberstarit.com/#organization" },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://cyberstarit.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const professionalServiceSchema = {
+  "@type": "ProfessionalService",
+  name: "Cyberstar IT",
+  url: "https://cyberstarit.com",
+  description:
+    "Cybersecurity consulting and IT solutions for small and medium businesses",
+  areaServed: "United States",
+  serviceType: [
+    "Cybersecurity Consulting",
+    "IT Solutions",
+    "Managed Security",
+  ],
+  email: "info@cyberstarit.com",
+};
+
+const schemaGraph = {
+  "@context": "https://schema.org",
+  "@graph": [organizationSchema, webSiteSchema, professionalServiceSchema],
+};
+
 function Index() {
   return (
     <>
@@ -36,8 +70,14 @@ function Index() {
           content="Cyberstar IT is a trusted US-based IT reseller and VAR specializing in phone systems, hardware, cybersecurity, and managed IT solutions for small and medium businesses."
         />
         <link rel="canonical" href="https://cyberstarit.com" />
+        <meta property="og:image" content="https://cyberstarit.com/og-default.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://cyberstarit.com/og-default.png" />
         <script type="application/ld+json">
-          {JSON.stringify(organizationSchema)}
+          {JSON.stringify(schemaGraph)}
         </script>
       </Helmet>
 
