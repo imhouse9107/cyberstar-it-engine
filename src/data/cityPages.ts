@@ -69,9 +69,9 @@ export const cityPages: CityPage[] = [
     relatedArticles: [
       "best-business-phone-system-small-business",
       "what-is-edr-endpoint-detection-response",
-      "nydfs-cybersecurity-compliance-smb",
-      "voip-vs-landline-business-phone",
-      "how-to-choose-it-reseller-var",
+      "cybersecurity-compliance-for-small-business",
+      "voip-vs-landline-for-business",
+      "how-to-choose-an-it-vendor",
     ],
   },
   {
@@ -126,11 +126,11 @@ export const cityPages: CityPage[] = [
       "Irvine",
     ],
     relatedArticles: [
-      "ccpa-compliance-small-business-guide",
+      "cybersecurity-compliance-for-small-business",
       "best-business-phone-system-small-business",
-      "what-is-mdr-managed-detection-response",
-      "cloud-backup-disaster-recovery-smb",
-      "how-to-choose-it-reseller-var",
+      "what-is-mdr-cybersecurity",
+      "disaster-recovery-plan-small-business",
+      "how-to-choose-an-it-vendor",
     ],
   },
   {
@@ -186,10 +186,10 @@ export const cityPages: CityPage[] = [
     ],
     relatedArticles: [
       "best-business-phone-system-small-business",
-      "ransomware-protection-small-business",
+      "ransomware-protection-for-small-business",
       "what-is-edr-endpoint-detection-response",
-      "patch-management-why-it-matters",
-      "voip-vs-landline-business-phone",
+      "what-is-patch-management",
+      "voip-vs-landline-for-business",
     ],
   },
   {
@@ -245,10 +245,10 @@ export const cityPages: CityPage[] = [
     ],
     relatedArticles: [
       "best-business-phone-system-small-business",
-      "hipaa-compliance-it-checklist",
-      "cloud-backup-disaster-recovery-smb",
-      "what-is-mdr-managed-detection-response",
-      "how-to-choose-it-reseller-var",
+      "cybersecurity-compliance-for-small-business",
+      "best-backup-solution-small-business",
+      "what-is-mdr-cybersecurity",
+      "how-to-choose-an-it-vendor",
     ],
   },
   {
@@ -304,10 +304,10 @@ export const cityPages: CityPage[] = [
     ],
     relatedArticles: [
       "what-is-edr-endpoint-detection-response",
-      "ransomware-protection-small-business",
-      "what-is-mdr-managed-detection-response",
+      "ransomware-protection-for-small-business",
+      "what-is-mdr-cybersecurity",
       "best-business-phone-system-small-business",
-      "patch-management-why-it-matters",
+      "what-is-patch-management",
     ],
   },
   {
@@ -362,11 +362,11 @@ export const cityPages: CityPage[] = [
       "Hialeah",
     ],
     relatedArticles: [
-      "cloud-backup-disaster-recovery-smb",
+      "best-backup-solution-small-business",
       "best-business-phone-system-small-business",
       "what-is-edr-endpoint-detection-response",
-      "business-continuity-planning-guide",
-      "how-to-choose-it-reseller-var",
+      "business-continuity-plan-template",
+      "how-to-choose-an-it-vendor",
     ],
   },
   {
@@ -422,10 +422,10 @@ export const cityPages: CityPage[] = [
     ],
     relatedArticles: [
       "what-is-edr-endpoint-detection-response",
-      "cloud-backup-disaster-recovery-smb",
-      "hipaa-compliance-it-checklist",
-      "what-is-mdr-managed-detection-response",
-      "patch-management-why-it-matters",
+      "disaster-recovery-plan-small-business",
+      "cybersecurity-compliance-for-small-business",
+      "what-is-mdr-cybersecurity",
+      "what-is-patch-management",
     ],
   },
   {
@@ -480,11 +480,11 @@ export const cityPages: CityPage[] = [
       "Fremont",
     ],
     relatedArticles: [
-      "ccpa-compliance-small-business-guide",
+      "cybersecurity-compliance-for-small-business",
       "what-is-edr-endpoint-detection-response",
       "best-business-phone-system-small-business",
-      "soc2-readiness-smb-guide",
-      "how-to-choose-it-reseller-var",
+      "it-audit-checklist-small-business",
+      "how-to-choose-an-it-vendor",
     ],
   },
 ];

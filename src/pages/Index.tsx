@@ -8,6 +8,10 @@ const organizationSchema = {
   url: "https://cyberstarit.com",
   description:
     "Trusted IT & cybersecurity solutions for US small and medium businesses.",
+  logo: "https://cyberstarit.com/logo.png",
+  sameAs: [
+    "https://www.linkedin.com/company/cyberstar-it",
+  ],
   address: {
     "@type": "PostalAddress",
     addressCountry: "US",
@@ -15,6 +19,7 @@ const organizationSchema = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "sales",
+    email: "info@cyberstarit.com",
     availableLanguage: "English",
   },
 };

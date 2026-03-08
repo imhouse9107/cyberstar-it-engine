@@ -73,8 +73,12 @@ function BlogPost() {
     datePublished: post.publishedDate,
     dateModified: post.publishedDate,
     author: {
-      "@type": "Organization",
-      name: "Cyberstar IT",
+      "@type": "Person",
+      name: "Mike Chen",
+      jobTitle: "Director of IT Solutions",
+      url: "https://cyberstarit.com/about",
+      image: "https://cyberstarit.com/authors/mike-chen.jpg",
+      worksFor: { "@type": "Organization", name: "Cyberstar IT" },
     },
     publisher: {
       "@type": "Organization",
@@ -214,7 +218,7 @@ function BlogPost() {
             {post.title}
           </h1>
 
-          <div className="flex items-center gap-4 text-sm text-gray-500">
+          <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
             <time dateTime={post.publishedDate}>
               {new Date(post.publishedDate).toLocaleDateString("en-US", {
                 year: "numeric",
@@ -226,6 +230,17 @@ function BlogPost() {
               <Clock className="w-4 h-4" />
               {minutes} min read
             </span>
+          </div>
+
+          {/* Author Byline */}
+          <div className="flex items-center gap-4 pt-6 border-t border-gray-200">
+            <div className="w-12 h-12 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center text-[var(--color-primary)] font-bold text-lg shrink-0">
+              MC
+            </div>
+            <div>
+              <p className="font-semibold text-sm text-gray-900">Mike Chen</p>
+              <p className="text-xs text-gray-500">Director of IT Solutions at Cyberstar IT</p>
+            </div>
           </div>
         </header>
 
@@ -274,6 +289,25 @@ function BlogPost() {
             >
               {post.content}
             </ReactMarkdown>
+          </div>
+        </div>
+
+        {/* Author Box */}
+        <div className="max-w-4xl mx-auto px-6 pb-16">
+          <div className="bg-gray-50 rounded-xl p-6 md:p-8 border border-gray-200">
+            <div className="flex flex-col sm:flex-row gap-5">
+              <div className="w-16 h-16 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center text-[var(--color-primary)] font-bold text-xl shrink-0">
+                MC
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">About the Author</p>
+                <p className="text-lg font-bold text-gray-900 mb-1">Mike Chen</p>
+                <p className="text-sm font-medium text-[var(--color-accent)] mb-3">Director of IT Solutions at Cyberstar IT</p>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Mike Chen leads IT solutions at Cyberstar IT, helping SMBs across the US build resilient technology infrastructure. With 12+ years in IT consulting and cybersecurity, Mike specializes in phone systems, endpoint security, and disaster recovery for businesses under 200 employees.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

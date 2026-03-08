@@ -140,6 +140,87 @@ async function renderRoute(browser, route) {
   }
 }
 
+// ── Sitemap generation ──────────────────────────────────────────────────────
+
+function generateSitemap() {
+  const dataDir = path.join(ROOT, "src", "data");
+  const BASE = "https://cyberstarit.com";
+
+  // Read blog slugs and their publishedDates
+  const blogFiles = [
+    "blogPosts.ts",
+    "blogPosts-batch2.ts",
+    "blogPosts-batch3.ts",
+    "blogPosts-batch4.ts",
+  ];
+
+  const articles = []; // { slug, date }
+  for (const file of blogFiles) {
+    const fp = path.join(dataDir, file);
+    if (!fs.existsSync(fp)) continue;
+    const content = fs.readFileSync(fp, "utf-8");
+    // Match slug/publishedDate pairs by finding each post block
+    const slugMatches = [...content.matchAll(/slug:\s*["']([^"']+)["']/g)];
+    const dateMatches = [...content.matchAll(/publishedDate:\s*["']([^"']+)["']/g)];
+    for (let i = 0; i < slugMatches.length; i++) {
+      articles.push({
+        slug: slugMatches[i][1],
+        date: dateMatches[i] ? dateMatches[i][1] : new Date().toISOString().slice(0, 10),
+      });
+    }
+  }
+
+  // Read cluster slugs
+  const clusterSlugs = [];
+  const clusterFile = path.join(dataDir, "blogClusters.ts");
+  if (fs.existsSync(clusterFile)) {
+    const content = fs.readFileSync(clusterFile, "utf-8");
+    for (const m of content.matchAll(/^\s*slug:\s*["']([^"']+)["']/gm)) {
+      clusterSlugs.push(m[1]);
+    }
+  }
+
+  // Read city slugs
+  const citySlugs = [];
+  const cityFile = path.join(dataDir, "cityPages.ts");
+  if (fs.existsSync(cityFile)) {
+    const content = fs.readFileSync(cityFile, "utf-8");
+    for (const m of content.matchAll(/^\s*slug:\s*["']([^"']+)["']/gm)) {
+      citySlugs.push(m[1]);
+    }
+  }
+
+  const today = new Date().toISOString().slice(0, 10);
+
+  // Build URL entries
+  const urls = [];
+
+  // Homepage and blog index
+  urls.push(`  <url>\n    <loc>${BASE}/</loc>\n    <lastmod>${today}</lastmod>\n  </url>`);
+  urls.push(`  <url>\n    <loc>${BASE}/blog</loc>\n    <lastmod>${today}</lastmod>\n  </url>`);
+
+  // Cluster pages — /blog/topic/{slug}
+  for (const slug of clusterSlugs) {
+    urls.push(`  <url>\n    <loc>${BASE}/blog/topic/${slug}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`);
+  }
+
+  // City pages — /{slug}
+  for (const slug of citySlugs) {
+    urls.push(`  <url>\n    <loc>${BASE}/${slug}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`);
+  }
+
+  // Blog posts — /blog/{slug}
+  for (const { slug, date } of articles) {
+    urls.push(`  <url>\n    <loc>${BASE}/blog/${slug}</loc>\n    <lastmod>${date}</lastmod>\n  </url>`);
+  }
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
+
+  const sitemapPath = path.join(DIST, "sitemap.xml");
+  fs.writeFileSync(sitemapPath, xml);
+  console.log(`Sitemap written to ${sitemapPath} (${urls.length} URLs)`);
+}
+
 // ── Main ────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -178,6 +259,9 @@ async function main() {
 
   await browser.close();
   server.close();
+
+  // Generate sitemap.xml in dist/
+  generateSitemap();
 
   console.log(`\nDone! ${done - errors}/${routes.length} routes pre-rendered successfully.`);
   if (errors > 0) {

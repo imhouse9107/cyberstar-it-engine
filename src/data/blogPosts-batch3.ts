@@ -7,7 +7,7 @@ export const batch3Posts: BlogPost[] = [
     metaDescription: "Learn what MDR cybersecurity is, how managed detection and response works, and why SMBs need it to defend against modern threats in 2026.",
     primaryKeyword: "what is mdr cybersecurity",
     cluster: "MDR & Managed Security",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-01-15",
     content: `# What Is MDR? Managed Detection and Response Explained
 
 > Managed Detection and Response (MDR) is a cybersecurity service that combines 24/7 monitoring, threat hunting, and active incident response — delivered by a team of human analysts backed by advanced technology. For small businesses that cannot staff a full security operations center, MDR closes the gap between "having security tools" and "actually being protected."
@@ -148,7 +148,7 @@ The MDR provider's SOC analysts investigate the alert, confirm whether it is a r
     metaDescription: "MDR vs EDR compared: understand the key differences between managed detection and response and endpoint detection tools for small business security.",
     primaryKeyword: "mdr vs edr",
     cluster: "MDR & Managed Security",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-01-17",
     content: `# MDR vs EDR: Which Does Your Business Need?
 
 > EDR (Endpoint Detection and Response) is a security technology platform that monitors endpoints for threats. MDR (Managed Detection and Response) is a service that includes human analysts who monitor, investigate, and respond to threats on your behalf — often using EDR as the underlying technology. The simplest way to think about it: EDR is the tool, MDR is the tool plus the team.
@@ -301,7 +301,7 @@ Ask one question: "Do I have someone who can investigate a security alert at 2 a
     metaDescription: "Compare the best MDR providers for small business in 2026. Real pricing, features, and honest reviews of Arctic Wolf, Huntress, Expel, and more.",
     primaryKeyword: "best mdr providers small business",
     cluster: "MDR & Managed Security",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-01-19",
     content: `# Best MDR Providers for Small Business in 2026
 
 > The best MDR providers for small businesses in 2026 are Huntress (best value for SMBs under 100 endpoints), Arctic Wolf (best for comprehensive coverage), Expel (best for transparency and cloud-native environments), CrowdStrike Falcon Complete (best detection efficacy), and SentinelOne Vigilance (best for autonomous response). Pricing ranges from $3 to $15 per endpoint per month.
@@ -476,7 +476,7 @@ Either model works. Many MSPs partner with MDR providers and manage the service 
     metaDescription: "MDR pricing explained: real costs from $3 to $15 per endpoint per month. Compare pricing models, hidden fees, and what SMBs should budget for MDR.",
     primaryKeyword: "mdr pricing",
     cluster: "MDR & Managed Security",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-01-21",
     content: `# MDR Pricing: How Much Does Managed Detection and Response Cost?
 
 > Managed Detection and Response (MDR) typically costs between $3 and $15 per endpoint per month for small businesses, translating to roughly $3,000–$15,000 per year for a 50-endpoint environment. The wide range reflects differences in coverage scope, response depth, and provider tier. Budget-friendly options like Huntress start around $3/endpoint/month, while premium services like CrowdStrike Falcon Complete run $15–$25/endpoint/month.
@@ -647,7 +647,7 @@ Most MDR providers offer annual contracts with monthly billing. Some offer month
     metaDescription: "MDR vs SIEM compared for small business. Learn the key differences in cost, staffing needs, and effectiveness to choose the right security approach.",
     primaryKeyword: "mdr vs siem",
     cluster: "MDR & Managed Security",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-01-22",
     content: `# MDR vs SIEM: Which Security Solution Is Right for You?
 
 > MDR (Managed Detection and Response) is a fully managed security service where human analysts monitor, investigate, and respond to threats on your behalf. SIEM (Security Information and Event Management) is a technology platform that collects and correlates log data across your environment to identify potential threats — but requires your team to manage, tune, and respond. For most small businesses without dedicated security staff, MDR delivers better outcomes at lower total cost.
@@ -806,7 +806,7 @@ Most cyber insurance carriers care about outcomes: 24/7 monitoring, incident res
     metaDescription: "MDR vs MSSP explained: understand the critical differences in response capability, cost, and coverage to choose the right managed security service.",
     primaryKeyword: "mdr vs mssp",
     cluster: "MDR & Managed Security",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-01-28",
     content: `# MDR vs MSSP: Understanding the Difference
 
 > MSSPs (Managed Security Service Providers) monitor your security tools and alert you when something looks wrong. MDR (Managed Detection and Response) providers monitor, investigate, and actively respond to threats on your behalf. The difference is the gap between "we saw something suspicious" and "we stopped the attack." For small businesses without internal security teams, that gap can mean the difference between a contained incident and a catastrophic breach.
@@ -960,7 +960,7 @@ The transition typically takes 2–4 weeks. Deploy the MDR provider's agents alo
     metaDescription: "Explore 24/7 security monitoring options for small business: MDR, MSSP, SOCaaS, and in-house. Compare real costs and find the right fit for your team.",
     primaryKeyword: "24/7 security monitoring small business",
     cluster: "MDR & Managed Security",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-01-29",
     content: `# 24/7 Security Monitoring for Small Business: Options and Costs
 
 > 24/7 security monitoring for small businesses costs between $150 and $1,500 per month depending on the approach. MDR (Managed Detection and Response) offers the best balance of cost and capability for most SMBs, starting around $3 per endpoint per month. The alternatives — building an in-house SOC, hiring an MSSP, or relying on business-hours-only monitoring — each come with significant trade-offs in cost, coverage, or effectiveness.
@@ -1178,7 +1178,7 @@ Industry benchmarks aim for detection within minutes and response within 30 minu
     metaDescription: "Compare the best backup solutions for small business in 2026. Real pricing, features, and expert picks from Veeam, Acronis, Datto, and more.",
     primaryKeyword: "best backup solution small business",
     cluster: "Backup & Disaster Recovery",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-01-30",
     content: `# Best Backup Solutions for Small Business in 2026
 
 > The best backup solutions for small businesses in 2026 are Veeam Data Platform (best for virtualized environments), Acronis Cyber Protect (best all-in-one backup and security), Datto BCDR (best for MSP-managed backup), Axcient x360Recover (best for rapid disaster recovery), and Microsoft 365 backup solutions like Veeam Backup for Microsoft 365 (essential for cloud data). Pricing ranges from $2 to $15 per workload per month depending on the solution and coverage level.
@@ -1378,7 +1378,7 @@ External drives are better than nothing but are inadequate for business backup. 
     metaDescription: "Step-by-step guide to creating a disaster recovery plan for small business. Free template, real examples, and expert guidance for SMBs under 200 employees.",
     primaryKeyword: "disaster recovery plan small business",
     cluster: "Backup & Disaster Recovery",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-02",
     content: `# How to Create a Disaster Recovery Plan for Small Business
 
 > A disaster recovery (DR) plan is a documented strategy that defines how your business will restore IT systems, data, and operations after a disruptive event — whether that is a ransomware attack, server failure, natural disaster, or cloud service outage. The process involves identifying critical systems, setting recovery time objectives, implementing backup solutions, and testing recovery procedures at least quarterly.
@@ -1606,7 +1606,7 @@ Yes. Many MSPs, including Cyberstar IT, include DR planning as part of their man
     metaDescription: "Cloud backup vs on-premise compared for small business. Analyze costs, recovery speed, security, and reliability to choose the best backup approach.",
     primaryKeyword: "cloud backup vs on-premise",
     cluster: "Backup & Disaster Recovery",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-05",
     content: `# Cloud Backup vs On-Premise: Which Is Right for Your Business?
 
 > For most small businesses, a hybrid backup strategy — combining on-premise backup for fast local recovery with cloud backup for disaster protection — delivers the best balance of speed, security, and resilience. Pure cloud backup works well for cloud-first businesses with less than 2 TB of data. Pure on-premise backup is rarely advisable because it provides no protection against site-level disasters like fire, flood, or ransomware that spreads across the local network.
@@ -1797,7 +1797,7 @@ Always. Encryption at rest and in transit should be non-negotiable for any backu
     metaDescription: "Build a ransomware-proof backup strategy using the 3-2-1-1-0 rule. Learn immutable backups, air-gapped copies, and tested recovery for small business.",
     primaryKeyword: "ransomware backup strategy",
     cluster: "Backup & Disaster Recovery",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-06",
     content: `# Ransomware-Proof Backup Strategy: The 3-2-1-1-0 Rule
 
 > The 3-2-1-1-0 backup rule is the modern standard for ransomware-resilient data protection: maintain 3 copies of your data, on 2 different media types, with 1 copy off-site, 1 copy that is immutable or air-gapped, and 0 errors verified through automated recovery testing. This framework evolved from the classic 3-2-1 rule specifically to address ransomware's ability to find and encrypt backup files.
@@ -2012,7 +2012,7 @@ No. [MDR](/blog/what-is-mdr-cybersecurity) and ransomware-proof backups are comp
     metaDescription: "Free business continuity plan template for small business. Step-by-step guide covering BIA, recovery strategies, and communication plans for SMBs.",
     primaryKeyword: "business continuity plan small business",
     cluster: "Backup & Disaster Recovery",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-09",
     content: `# Business Continuity Plan for Small Business: Free Template
 
 > A business continuity plan (BCP) is a documented framework that ensures your business can continue operating during and after a disruptive event — from cyberattacks and power outages to natural disasters and pandemic-related disruptions. Unlike a disaster recovery plan, which focuses specifically on restoring IT systems, a BCP covers the entire business: operations, communications, staffing, finances, and facilities.
@@ -2244,7 +2244,7 @@ A template provides structure, but the content must be specific to your business
     metaDescription: "RTO vs RPO explained in plain language. Learn what recovery time and recovery point objectives mean and how to set them for your small business.",
     primaryKeyword: "rto vs rpo",
     cluster: "Backup & Disaster Recovery",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-11",
     content: `# RTO vs RPO: What They Mean and How to Set Them
 
 > RTO (Recovery Time Objective) is the maximum acceptable time to restore a system after a failure — how long you can afford to be down. RPO (Recovery Point Objective) is the maximum acceptable amount of data loss measured in time — how much recent work you can afford to lose. Together, they define the performance requirements for your backup and disaster recovery strategy.
@@ -2450,7 +2450,7 @@ Yes, but they are partially managed by the SaaS provider. Microsoft 365 has a 99
     metaDescription: "Veeam vs Acronis compared for small business backup. Side-by-side analysis of features, pricing, ease of use, and which is right for your environment.",
     primaryKeyword: "veeam vs acronis for smb",
     cluster: "Backup & Disaster Recovery",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-13",
     content: `# Veeam vs Acronis: Which Backup Solution for Small Business?
 
 > Veeam is the stronger choice for businesses with virtualized infrastructure (VMware, Hyper-V) that need enterprise-grade backup reliability with verified recovery. Acronis is better for small businesses that want an all-in-one platform combining backup with built-in cybersecurity features like anti-malware, patch management, and ransomware protection. Both are excellent — the right choice depends on your environment and whether you prefer best-of-breed backup or consolidated backup-plus-security.
@@ -2625,7 +2625,7 @@ Veeam is the dominant backup platform in the MSP channel, used by over 30,000 se
     metaDescription: "Learn what patch management is, how it works, and why it's critical for small business cybersecurity. Practical guide with real-world examples.",
     primaryKeyword: "what is patch management",
     cluster: "Patch Management",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-14",
     content: `# What Is Patch Management and Why Does It Matter?
 
 > Patch management is the process of identifying, acquiring, testing, and deploying software updates (patches) to fix security vulnerabilities, resolve bugs, and improve functionality across your IT environment. For small businesses, effective patch management closes the security gaps that attackers exploit most frequently — unpatched known vulnerabilities account for 60% of successful breaches according to the Ponemon Institute.
@@ -2835,7 +2835,7 @@ Patch management reduces your attack surface by closing known vulnerabilities. [
     metaDescription: "Learn how automated patch management works, why SMBs need it, and which tools deliver the best results. Compare NinjaOne, Automox, and more.",
     primaryKeyword: "automated patch management",
     cluster: "Patch Management",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-18",
     content: `# Automated Patch Management: How It Works and Why You Need It
 
 > Automated patch management uses software tools to discover, download, test, deploy, and verify patches across your IT environment with minimal human intervention. For small businesses, automation transforms patching from a manual, error-prone chore that gets postponed into a consistent, reliable process that runs on schedule — closing vulnerability windows from weeks or months to hours or days.
@@ -3061,7 +3061,7 @@ Configure these applications for manual approval in your patch management policy
     metaDescription: "Patch management best practices for small business: prioritization frameworks, scheduling, testing, and automation to keep your systems secure.",
     primaryKeyword: "patch management best practices",
     cluster: "Patch Management",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-20",
     content: `# Patch Management Best Practices for Small Business
 
 > The most effective patch management programs for small businesses combine automation with smart prioritization: auto-deploy critical security patches within 48 hours, use staged rollouts to catch compatibility issues, patch third-party applications (not just Windows), and maintain compliance visibility through centralized reporting. The goal is not perfection — it is consistent, timely patching that closes the majority of your vulnerability exposure.
@@ -3282,7 +3282,7 @@ For most small businesses, yes. MSPs have the tools, expertise, and operational 
     metaDescription: "Compare the top 5 patch management tools for SMBs: NinjaOne, Automox, Action1, ManageEngine, and Intune. Real pricing, features, and recommendations.",
     primaryKeyword: "patch management tools",
     cluster: "Patch Management",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-21",
     content: `# Patch Management Tools Compared: Top 5 for SMBs
 
 > The best patch management tools for small businesses in 2026 are NinjaOne (best all-around for MSP-managed and internal IT), Automox (best cloud-native simplicity), Action1 (best free option for up to 200 endpoints), ManageEngine Patch Manager Plus (best for on-premise control and third-party app breadth), and Microsoft Intune (best for Microsoft-only environments). Pricing ranges from free to $5 per endpoint per month.
@@ -3489,7 +3489,7 @@ Windows Server Update Services (WSUS) is free and functional for Windows-only pa
     metaDescription: "Complete Windows patch management guide for IT admins. Learn Patch Tuesday, WSUS vs modern tools, deployment rings, and troubleshooting failed patches.",
     primaryKeyword: "windows patch management",
     cluster: "Patch Management",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-23",
     content: `# Windows Patch Management: A Complete Guide for IT Admins
 
 > Windows patch management involves deploying Microsoft's monthly security updates, cumulative updates, .NET patches, and feature updates across all Windows endpoints and servers in your environment. The modern approach uses cloud-based tools or Windows Update for Business to automate deployment via rings, replacing the legacy WSUS model that required on-premise infrastructure and significant manual effort.
@@ -3751,7 +3751,7 @@ For managed environments, use a patch management tool or WUfB policies rather th
     metaDescription: "Vulnerability management vs patch management explained. Understand how these complementary processes work together to protect your small business.",
     primaryKeyword: "vulnerability management vs patch management",
     cluster: "Patch Management",
-    publishedDate: "2026-03-08",
+    publishedDate: "2026-02-25",
     content: `# Vulnerability Management vs Patch Management: What's the Difference?
 
 > Vulnerability management is the continuous process of identifying, assessing, prioritizing, and remediating security weaknesses across your IT environment. Patch management is the specific process of deploying software updates to fix known vulnerabilities. Patch management is one component of vulnerability management — it handles the remediation step for vulnerabilities that have patches available. But not all vulnerabilities can be fixed with a patch, which is why the broader vulnerability management discipline exists.

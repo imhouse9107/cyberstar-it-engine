@@ -1,0 +1,29 @@
+# Cyberstar IT
+> Value-added IT reseller helping US small businesses build resilient technology infrastructure.
+
+## About
+Cyberstar IT is a vendor-agnostic IT reseller and consultancy serving small to medium businesses (up to 200 employees) across the United States. We help SMBs select, deploy, and manage business technology — from phone systems to cybersecurity solutions.
+
+## Key Topics
+- Business Phone Systems & VoIP
+- IT Hardware & Infrastructure
+- Endpoint Detection & Response (EDR)
+- Managed Detection & Response (MDR)
+- Backup & Disaster Recovery
+- Patch Management
+- Cybersecurity for Small Business
+- IT Buying Guides & Comparisons
+
+## Services
+- Phone Systems: Cloud VoIP, UCaaS, hosted PBX solutions
+- Hardware: Business laptops, servers, networking equipment
+- Cybersecurity: EDR, MDR, backup, patch management
+- IT Consulting: Vendor-agnostic technology assessments
+
+## Contact
+- Website: https://cyberstarit.com
+- Location: United States
+
+## Content
+- Blog: https://cyberstarit.com/blog (80+ articles on IT solutions for SMBs)
+- Sitemap: https://cyberstarit.com/sitemap.xml

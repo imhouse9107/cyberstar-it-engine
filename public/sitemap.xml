@@ -1,74 +1,415 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
   <url>
     <loc>https://cyberstarit.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-03-08</lastmod>
   </url>
-
-  <!-- Blog Index -->
   <url>
     <loc>https://cyberstarit.com/blog</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-03-08</lastmod>
   </url>
 
-  <!-- Cluster: Phone Systems & VoIP -->
+  <!-- Cluster Pages -->
   <url>
-    <loc>https://cyberstarit.com/blog/phone-systems-voip</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://cyberstarit.com/blog/topic/phone-systems-voip</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
-
-  <!-- Cluster: Business Hardware -->
   <url>
-    <loc>https://cyberstarit.com/blog/business-hardware</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://cyberstarit.com/blog/topic/business-hardware</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
-
-  <!-- Cluster: EDR & Endpoint Security -->
   <url>
-    <loc>https://cyberstarit.com/blog/endpoint-security</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://cyberstarit.com/blog/topic/endpoint-security</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
-
-  <!-- Cluster: MDR & Managed Security -->
   <url>
-    <loc>https://cyberstarit.com/blog/managed-detection-response</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://cyberstarit.com/blog/topic/managed-detection-response</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
-
-  <!-- Cluster: Backup & Disaster Recovery -->
   <url>
-    <loc>https://cyberstarit.com/blog/backup-disaster-recovery</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://cyberstarit.com/blog/topic/backup-disaster-recovery</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
-
-  <!-- Cluster: Patch Management -->
   <url>
-    <loc>https://cyberstarit.com/blog/patch-management</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://cyberstarit.com/blog/topic/patch-management</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
-
-  <!-- Cluster: Cybersecurity for SMB -->
   <url>
-    <loc>https://cyberstarit.com/blog/cybersecurity-smb</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://cyberstarit.com/blog/topic/cybersecurity-smb</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
-
-  <!-- Cluster: IT Buying Guides -->
   <url>
-    <loc>https://cyberstarit.com/blog/it-buying-guide</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://cyberstarit.com/blog/topic/it-buying-guide</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
 
-  <!-- Articles will be added as content is published -->
+  <!-- City Pages -->
+  <url>
+    <loc>https://cyberstarit.com/new-york</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/los-angeles</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/chicago</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/dallas</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/atlanta</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/miami</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/houston</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/san-francisco</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+
+  <!-- Blog Posts: Phone Systems & VoIP -->
+  <url>
+    <loc>https://cyberstarit.com/blog/best-business-phone-system-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/voip-vs-landline-for-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/how-much-does-a-business-phone-system-cost</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/best-voip-providers-small-business-2026</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/cloud-phone-system-for-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/business-phone-system-setup-guide</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/3cx-vs-ringcentral</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/hosted-pbx-vs-on-premise-phone-system</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/voip-phone-system-features</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/how-to-switch-business-phone-system</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/voip-security-risks-and-solutions</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/business-phone-system-for-remote-teams</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/auto-attendant-vs-receptionist</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/sip-trunking-explained</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/business-phone-system-roi-calculator</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/unified-communications-as-a-service</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/microsoft-teams-phone-system</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/voip-for-call-centers-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/business-phone-number-porting</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/phone-system-for-medical-office</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+
+  <!-- Blog Posts: Business Hardware -->
+  <url>
+    <loc>https://cyberstarit.com/blog/best-business-laptops-2026</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/it-hardware-for-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/refurbished-vs-new-business-computers</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/small-business-server-setup</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/network-equipment-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/how-to-set-up-business-wifi</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/business-workstation-vs-consumer-pc</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/it-hardware-lifecycle-management</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/it-hardware-budget-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/monitor-setup-for-productivity</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+
+  <!-- Blog Posts: EDR & Endpoint Security -->
+  <url>
+    <loc>https://cyberstarit.com/blog/what-is-edr-endpoint-detection-response</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/edr-vs-antivirus</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/best-edr-solutions-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/crowdstrike-vs-sentinelone-for-smb</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/endpoint-protection-platform-comparison</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/edr-implementation-guide</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/edr-false-positives-how-to-reduce</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/ransomware-protection-for-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/zero-trust-endpoint-security</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/byod-security-policy</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+
+  <!-- Blog Posts: MDR & Managed Security -->
+  <url>
+    <loc>https://cyberstarit.com/blog/what-is-mdr-cybersecurity</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/mdr-vs-edr</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/best-mdr-providers-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/mdr-pricing-how-much-does-it-cost</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/mdr-vs-siem</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/mdr-vs-mssp</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/24-7-security-monitoring-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+
+  <!-- Blog Posts: Backup & Disaster Recovery -->
+  <url>
+    <loc>https://cyberstarit.com/blog/best-backup-solution-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/disaster-recovery-plan-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/cloud-backup-vs-on-premise</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/ransomware-backup-strategy</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/business-continuity-plan-template</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/rto-vs-rpo-explained</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/veeam-vs-acronis-for-smb</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+
+  <!-- Blog Posts: Patch Management -->
+  <url>
+    <loc>https://cyberstarit.com/blog/what-is-patch-management</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/automated-patch-management</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/patch-management-best-practices</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/patch-management-tools-comparison</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/windows-patch-management-guide</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/vulnerability-management-vs-patch-management</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+
+  <!-- Blog Posts: Cybersecurity for SMB -->
+  <url>
+    <loc>https://cyberstarit.com/blog/cybersecurity-for-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/how-much-does-cybersecurity-cost-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/cybersecurity-assessment-checklist</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/most-common-cyber-attacks-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/cybersecurity-compliance-for-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/cyber-insurance-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/employee-cybersecurity-training</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/multi-factor-authentication-for-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/zero-trust-security-model-explained</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/cybersecurity-incident-response-plan</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+
+  <!-- Blog Posts: IT Buying Guides -->
+  <url>
+    <loc>https://cyberstarit.com/blog/managed-it-vs-in-house-it</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/how-to-choose-an-it-vendor</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/it-budget-for-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/it-audit-checklist-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/when-to-outsource-it</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/msp-vs-var-which-do-you-need</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/technology-refresh-cycle</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/it-vendor-negotiation-tips</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/saas-vs-on-premise-software</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://cyberstarit.com/blog/it-procurement-process-small-business</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
 </urlset>

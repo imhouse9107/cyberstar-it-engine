@@ -9,6 +9,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { getCityBySlug, cityPages } from "@/data/cityPages";
+import { getPostBySlug } from "@/data/blogPosts";
 
 function CityLanding() {
   const location = useLocation();
@@ -51,14 +52,12 @@ function CityLanding() {
       "@type": "City",
       name: city.city,
     },
-    priceRange: "$$",
-    telephone: "",
-    serviceType: [
-      "IT Solutions",
-      "Cybersecurity",
-      "Phone Systems",
-      "Hardware Procurement",
-      "Managed IT Services",
+    email: "info@cyberstarit.com",
+    makesOffer: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "IT Solutions" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Cybersecurity" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Phone Systems" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hardware Procurement" } },
     ],
   };
 
@@ -341,10 +340,8 @@ function CityLanding() {
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {city.relatedArticles.map((articleSlug) => {
-              const title = articleSlug
-                .split("-")
-                .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-                .join(" ");
+              const post = getPostBySlug(articleSlug);
+              if (!post) return null;
               return (
                 <Link
                   key={articleSlug}
@@ -352,7 +349,7 @@ function CityLanding() {
                   className="group block p-6 rounded-xl border border-gray-200 hover:border-[var(--color-accent)]/30 hover:shadow-md transition-all"
                 >
                   <h3 className="font-semibold text-gray-900 group-hover:text-[var(--color-accent)] transition-colors mb-2">
-                    {title}
+                    {post.title}
                   </h3>
                   <span className="inline-flex items-center gap-1 text-sm text-[var(--color-accent)] font-medium">
                     Read Article
