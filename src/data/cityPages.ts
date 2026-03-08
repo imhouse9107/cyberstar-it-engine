@@ -1,0 +1,494 @@
+export interface CityPage {
+  slug: string;
+  city: string;
+  state: string;
+  country: string;
+  metaTitle: string;
+  metaDescription: string;
+  heroHeadline: string;
+  heroSubline: string;
+  localContext: string[];
+  itChallenges: { title: string; description: string }[];
+  localStats: { label: string; value: string }[];
+  nearbyAreas: string[];
+  relatedArticles: string[];
+}
+
+export const cityPages: CityPage[] = [
+  {
+    slug: "new-york",
+    city: "New York",
+    state: "New York",
+    country: "United States",
+    metaTitle: "IT Solutions & Cybersecurity New York | Cyberstar IT",
+    metaDescription:
+      "Cyberstar IT provides phone systems, hardware, EDR, MDR, backup, and patch management for New York City SMBs. Trusted IT reseller for businesses up to 200 employees.",
+    heroHeadline: "IT Solutions for New York Businesses",
+    heroSubline:
+      "From Wall Street compliance to Midtown startups — Cyberstar IT delivers phone systems, cybersecurity, and infrastructure built for the pace of NYC.",
+    localContext: [
+      "New York City is home to over 200,000 technology companies and the largest concentration of financial services firms in the world. Small and medium businesses operating in this environment face intense competition for IT talent and rising cybersecurity threats, particularly in industries subject to SEC, FINRA, and NYDFS regulations.",
+      "The city's five boroughs support a diverse economy spanning finance, media, healthcare, legal services, and real estate — each with distinct IT requirements. Manhattan-based firms need reliable VoIP and unified communications to keep hybrid teams connected, while Brooklyn and Queens businesses increasingly require enterprise-grade security on SMB budgets.",
+      "With average commercial rents among the highest in the nation, NYC businesses cannot afford costly downtime or data breaches. A trusted IT reseller who understands the local regulatory landscape and can source, deploy, and support the right technology stack is a competitive necessity.",
+    ],
+    itChallenges: [
+      {
+        title: "Financial Compliance Requirements",
+        description:
+          "NYC businesses in financial services must meet SEC, FINRA, and NYDFS cybersecurity regulations including 23 NYCRR 500, requiring endpoint detection, encryption, and audit-ready systems.",
+      },
+      {
+        title: "Intense Talent Competition",
+        description:
+          "With major tech firms and banks competing for IT professionals, SMBs struggle to hire and retain in-house IT staff, making outsourced IT solutions and managed services essential.",
+      },
+      {
+        title: "High Cost of Downtime",
+        description:
+          "Commercial rents exceeding $80/sq ft in Manhattan mean every minute of downtime is amplified. Businesses need reliable backup, disaster recovery, and proactive patch management.",
+      },
+      {
+        title: "Hybrid Workforce Infrastructure",
+        description:
+          "Post-pandemic NYC offices operate hybrid models requiring robust VoIP, cloud-based phone systems, and secure remote access for employees split between office and home.",
+      },
+    ],
+    localStats: [
+      { label: "Tech Companies in NYC", value: "200,000+" },
+      { label: "Avg. IT Spend per SMB Employee", value: "$12,800/yr" },
+      { label: "Cyber Attacks on NYC Businesses/Year", value: "48,000+" },
+      { label: "SMBs in the NYC Metro Area", value: "850,000+" },
+    ],
+    nearbyAreas: [
+      "Jersey City",
+      "Newark",
+      "Stamford",
+      "White Plains",
+      "Long Island",
+    ],
+    relatedArticles: [
+      "best-business-phone-system-small-business",
+      "what-is-edr-endpoint-detection-response",
+      "nydfs-cybersecurity-compliance-smb",
+      "voip-vs-landline-business-phone",
+      "how-to-choose-it-reseller-var",
+    ],
+  },
+  {
+    slug: "los-angeles",
+    city: "Los Angeles",
+    state: "California",
+    country: "United States",
+    metaTitle: "IT Solutions & Cybersecurity Los Angeles | Cyberstar IT",
+    metaDescription:
+      "Cyberstar IT delivers phone systems, hardware, cybersecurity, and managed IT services to Los Angeles SMBs. Trusted VAR for businesses up to 200 employees.",
+    heroHeadline: "IT Solutions for Los Angeles Businesses",
+    heroSubline:
+      "From entertainment studios to Silicon Beach startups — Cyberstar IT provides the phone systems, cybersecurity, and IT infrastructure LA businesses depend on.",
+    localContext: [
+      "Los Angeles is the second-largest metro economy in the United States and a global center for entertainment, media, aerospace, and fashion technology. The city's growing Silicon Beach corridor in Playa Vista and Santa Monica has attracted thousands of tech startups, while established industries in Downtown LA and the San Fernando Valley continue to modernize their IT infrastructure.",
+      "Small and medium businesses in LA face unique challenges including California's strict data privacy regulations (CCPA/CPRA), high employee churn, and the need to support creative workflows that demand high-bandwidth networks and specialized hardware. Entertainment and post-production firms need large file transfer capabilities and secure collaboration tools.",
+      "LA's sprawling geography and traffic-heavy commutes have accelerated remote and hybrid work adoption faster than most US metros. Businesses need cloud-based phone systems, endpoint security for distributed teams, and IT partners who can provide on-site support across the metro area.",
+    ],
+    itChallenges: [
+      {
+        title: "CCPA/CPRA Data Privacy Compliance",
+        description:
+          "California's Consumer Privacy Act requires businesses handling personal data to implement strict security controls, data mapping, and breach notification processes.",
+      },
+      {
+        title: "Creative Workflow Demands",
+        description:
+          "Entertainment and media companies need high-performance hardware, large file transfer infrastructure, and secure collaboration tools that most generic IT setups cannot deliver.",
+      },
+      {
+        title: "Distributed Workforce Across a Sprawling Metro",
+        description:
+          "LA's geography means employees are spread across a massive metro area, requiring cloud-based communications and endpoint protection for remote and hybrid teams.",
+      },
+      {
+        title: "Startup Growth Without Enterprise Budgets",
+        description:
+          "Silicon Beach startups need scalable phone systems, cybersecurity, and hardware procurement that can grow with them without requiring enterprise-level IT investment upfront.",
+      },
+    ],
+    localStats: [
+      { label: "Tech Companies in LA Metro", value: "35,000+" },
+      { label: "Avg. IT Spend per SMB Employee", value: "$10,500/yr" },
+      { label: "Data Breaches Reported in CA/Year", value: "18,000+" },
+      { label: "SMBs in the LA Metro Area", value: "600,000+" },
+    ],
+    nearbyAreas: [
+      "Santa Monica",
+      "Pasadena",
+      "Long Beach",
+      "Burbank",
+      "Irvine",
+    ],
+    relatedArticles: [
+      "ccpa-compliance-small-business-guide",
+      "best-business-phone-system-small-business",
+      "what-is-mdr-managed-detection-response",
+      "cloud-backup-disaster-recovery-smb",
+      "how-to-choose-it-reseller-var",
+    ],
+  },
+  {
+    slug: "chicago",
+    city: "Chicago",
+    state: "Illinois",
+    country: "United States",
+    metaTitle: "IT Solutions & Cybersecurity Chicago | Cyberstar IT",
+    metaDescription:
+      "Cyberstar IT provides phone systems, hardware, EDR, MDR, backup, and managed IT for Chicago SMBs. Trusted IT reseller for Midwest businesses up to 200 employees.",
+    heroHeadline: "IT Solutions for Chicago Businesses",
+    heroSubline:
+      "From the Loop's financial firms to manufacturing operations across Chicagoland — Cyberstar IT delivers the IT infrastructure and cybersecurity your business needs.",
+    localContext: [
+      "Chicago is the economic engine of the Midwest, anchoring a metro area with strengths in manufacturing, financial services, logistics, healthcare, and professional services. The city's central location and robust fiber infrastructure make it a major data center hub, with businesses benefiting from low-latency connectivity and competitive telecom pricing.",
+      "Small and medium businesses in Chicagoland operate in a market where IT modernization is accelerating rapidly. Manufacturing firms are investing in industrial cybersecurity and IoT protection, financial services companies need compliance-ready endpoint detection, and professional services firms are migrating to cloud-based phone systems and collaboration platforms.",
+      "Chicago's IT talent market is more accessible than coastal cities, but SMBs still face challenges hiring specialized cybersecurity and infrastructure professionals. Working with a trusted IT reseller allows businesses to access enterprise-grade technology and expertise without the overhead of a full internal IT team.",
+    ],
+    itChallenges: [
+      {
+        title: "Manufacturing Cybersecurity",
+        description:
+          "Chicago-area manufacturers are increasingly targeted by ransomware and supply chain attacks, requiring industrial-grade endpoint detection, network segmentation, and backup strategies.",
+      },
+      {
+        title: "Financial Services Compliance",
+        description:
+          "Loop-based financial firms and insurance companies must meet SOC 2, PCI-DSS, and state regulatory requirements with audit-ready IT infrastructure and documented security controls.",
+      },
+      {
+        title: "Legacy System Modernization",
+        description:
+          "Many established Chicagoland businesses run aging PBX phone systems and on-premises servers that need migration to modern VoIP, cloud, and hybrid infrastructure.",
+      },
+      {
+        title: "Harsh Weather Business Continuity",
+        description:
+          "Chicago's severe winters and storms can disrupt power and connectivity. Businesses need robust backup, disaster recovery, and redundant communication systems.",
+      },
+    ],
+    localStats: [
+      { label: "Tech Companies in Chicagoland", value: "16,000+" },
+      { label: "Avg. IT Spend per SMB Employee", value: "$9,800/yr" },
+      { label: "Ransomware Attacks on IL Businesses/Year", value: "8,500+" },
+      { label: "SMBs in the Chicago Metro", value: "450,000+" },
+    ],
+    nearbyAreas: [
+      "Naperville",
+      "Schaumburg",
+      "Evanston",
+      "Oak Brook",
+      "Joliet",
+    ],
+    relatedArticles: [
+      "best-business-phone-system-small-business",
+      "ransomware-protection-small-business",
+      "what-is-edr-endpoint-detection-response",
+      "patch-management-why-it-matters",
+      "voip-vs-landline-business-phone",
+    ],
+  },
+  {
+    slug: "dallas",
+    city: "Dallas",
+    state: "Texas",
+    country: "United States",
+    metaTitle: "IT Solutions & Cybersecurity Dallas | Cyberstar IT",
+    metaDescription:
+      "Cyberstar IT delivers phone systems, hardware, EDR, MDR, backup, and managed IT for Dallas-Fort Worth SMBs. Trusted IT reseller for Texas businesses up to 200 employees.",
+    heroHeadline: "IT Solutions for Dallas Businesses",
+    heroSubline:
+      "At the heart of the Telecom Corridor and one of America's fastest-growing business regions — Cyberstar IT equips DFW businesses with the technology to compete.",
+    localContext: [
+      "The Dallas-Fort Worth metroplex is one of the fastest-growing business regions in the United States, fueled by major corporate relocations, a business-friendly tax environment, and a deep telecom and technology heritage. The Richardson Telecom Corridor alone is home to over 5,000 tech companies, and the DFW area continues to attract headquarters from California and the Northeast.",
+      "Small and medium businesses in Dallas benefit from competitive commercial real estate and a growing talent pool, but face increasing cybersecurity threats as the region's economic prominence makes it a higher-value target. Healthcare, professional services, and logistics companies all need robust IT infrastructure that can scale with the rapid growth typical of DFW businesses.",
+      "The DFW metro's geographic spread across multiple counties means businesses need IT partners who can provide consistent service and support across the metroplex. Cloud-based phone systems, centralized endpoint management, and reliable backup solutions are essential for multi-location operations.",
+    ],
+    itChallenges: [
+      {
+        title: "Rapid Business Growth Scaling",
+        description:
+          "DFW businesses are growing fast, and IT infrastructure that worked for 20 employees breaks down at 100. Phone systems, security, and hardware need to scale without costly rip-and-replace cycles.",
+      },
+      {
+        title: "Multi-Location IT Consistency",
+        description:
+          "The DFW metroplex spans thousands of square miles. Businesses with offices in Dallas, Fort Worth, Plano, and beyond need unified IT management, security policies, and communication systems.",
+      },
+      {
+        title: "Healthcare IT Compliance (HIPAA)",
+        description:
+          "North Texas has one of the largest concentrations of healthcare businesses in the US, all requiring HIPAA-compliant phone systems, endpoint protection, and encrypted backup.",
+      },
+      {
+        title: "Texas Grid and Power Reliability",
+        description:
+          "After the 2021 grid crisis, Dallas businesses recognize the need for UPS systems, cloud backup, disaster recovery planning, and communication systems that work during outages.",
+      },
+    ],
+    localStats: [
+      { label: "Tech Companies in DFW", value: "18,000+" },
+      { label: "Avg. IT Spend per SMB Employee", value: "$9,200/yr" },
+      { label: "Corporate HQ Relocations (2020-2025)", value: "200+" },
+      { label: "SMBs in the DFW Metro", value: "500,000+" },
+    ],
+    nearbyAreas: [
+      "Fort Worth",
+      "Plano",
+      "Frisco",
+      "Arlington",
+      "Irving",
+    ],
+    relatedArticles: [
+      "best-business-phone-system-small-business",
+      "hipaa-compliance-it-checklist",
+      "cloud-backup-disaster-recovery-smb",
+      "what-is-mdr-managed-detection-response",
+      "how-to-choose-it-reseller-var",
+    ],
+  },
+  {
+    slug: "atlanta",
+    city: "Atlanta",
+    state: "Georgia",
+    country: "United States",
+    metaTitle: "IT Solutions & Cybersecurity Atlanta | Cyberstar IT",
+    metaDescription:
+      "Cyberstar IT provides phone systems, hardware, EDR, MDR, backup, and managed IT for Atlanta SMBs. Trusted cybersecurity and IT reseller for Georgia businesses.",
+    heroHeadline: "IT Solutions for Atlanta Businesses",
+    heroSubline:
+      "In one of America's top cybersecurity hubs — Cyberstar IT helps Atlanta SMBs protect their operations with enterprise-grade IT and security solutions.",
+    localContext: [
+      "Atlanta has established itself as a national leader in cybersecurity, with major security firms, government agencies, and the Georgia Tech Information Security Center anchoring a thriving ecosystem. The city is also a major hub for logistics, healthcare, fintech, and film production, making it one of the most economically diverse metros in the Southeast.",
+      "Small and medium businesses in Atlanta benefit from a strong talent pipeline and growing venture capital presence, but the city's prominence in cybersecurity also means local businesses are held to higher expectations by customers and partners when it comes to their own security posture. Ransomware attacks on Atlanta organizations — including the city government itself in 2018 — demonstrated that businesses of all sizes are targets.",
+      "Atlanta's rapid population growth and expanding business districts in Midtown, Buckhead, and the Perimeter mean IT infrastructure must keep pace. Businesses need scalable phone systems, reliable hardware procurement, and proactive security monitoring to match the city's momentum.",
+    ],
+    itChallenges: [
+      {
+        title: "Elevated Cybersecurity Expectations",
+        description:
+          "Operating in a city known for cybersecurity means Atlanta businesses face higher scrutiny from clients and partners. Strong EDR, MDR, and security monitoring are baseline requirements.",
+      },
+      {
+        title: "Ransomware Vulnerability",
+        description:
+          "Atlanta's 2018 city government ransomware attack was a wake-up call. Local SMBs need robust backup, patch management, and incident response planning to avoid becoming the next headline.",
+      },
+      {
+        title: "Logistics and Supply Chain IT",
+        description:
+          "Home to the world's busiest airport and major logistics operations, Atlanta businesses in this sector need always-on communications, real-time monitoring, and resilient infrastructure.",
+      },
+      {
+        title: "Fast-Growing Fintech Compliance",
+        description:
+          "Atlanta's booming fintech sector requires PCI-DSS compliance, encrypted communications, endpoint protection, and audit-ready IT systems from day one.",
+      },
+    ],
+    localStats: [
+      { label: "Cybersecurity Firms in Atlanta", value: "300+" },
+      { label: "Avg. IT Spend per SMB Employee", value: "$9,500/yr" },
+      { label: "Cyber Incidents in GA/Year", value: "12,000+" },
+      { label: "SMBs in the Atlanta Metro", value: "350,000+" },
+    ],
+    nearbyAreas: [
+      "Marietta",
+      "Decatur",
+      "Sandy Springs",
+      "Alpharetta",
+      "Roswell",
+    ],
+    relatedArticles: [
+      "what-is-edr-endpoint-detection-response",
+      "ransomware-protection-small-business",
+      "what-is-mdr-managed-detection-response",
+      "best-business-phone-system-small-business",
+      "patch-management-why-it-matters",
+    ],
+  },
+  {
+    slug: "miami",
+    city: "Miami",
+    state: "Florida",
+    country: "United States",
+    metaTitle: "IT Solutions & Cybersecurity Miami | Cyberstar IT",
+    metaDescription:
+      "Cyberstar IT delivers phone systems, hardware, EDR, MDR, backup, and disaster recovery for Miami SMBs. Trusted IT reseller for South Florida businesses.",
+    heroHeadline: "IT Solutions for Miami Businesses",
+    heroSubline:
+      "Gateway to Latin America and a booming fintech hub — Cyberstar IT protects Miami businesses with reliable IT infrastructure, cybersecurity, and disaster recovery.",
+    localContext: [
+      "Miami has transformed into one of the most dynamic business cities in the United States, driven by a fintech boom, Latin American trade connections, and a wave of tech company relocations from Silicon Valley and New York. The city's position as the gateway to Latin America means many local businesses operate bilingually and across international borders, adding complexity to their IT and compliance requirements.",
+      "South Florida's small and medium businesses face a unique combination of challenges: hurricane season demands robust disaster recovery and cloud backup, the fintech and crypto sectors require stringent compliance controls, and the region's explosive growth means IT infrastructure must be built to scale quickly. Real estate, hospitality, healthcare, and international trade all drive demand for reliable phone systems and cybersecurity.",
+      "Miami's tropical climate and coastal location make physical infrastructure vulnerability a constant concern. Businesses that rely solely on on-premises systems risk catastrophic data loss during storms. Cloud-based phone systems, offsite backup, and proactive endpoint management are not optional — they are business-critical.",
+    ],
+    itChallenges: [
+      {
+        title: "Hurricane Disaster Recovery",
+        description:
+          "Miami businesses face annual hurricane season risks. Cloud backup, offsite disaster recovery, and communication continuity plans are essential to survive weather disruptions.",
+      },
+      {
+        title: "Fintech and Crypto Compliance",
+        description:
+          "Miami's booming fintech sector requires PCI-DSS, SOC 2, and FinCEN compliance with encrypted communications, endpoint protection, and comprehensive audit trails.",
+      },
+      {
+        title: "International Business Complexity",
+        description:
+          "As a gateway to Latin America, Miami businesses often handle cross-border transactions and communications requiring multi-language support, international VoIP, and data sovereignty awareness.",
+      },
+      {
+        title: "Rapid Scaling in a Hot Market",
+        description:
+          "Miami's population and business growth is outpacing most US metros. Companies need IT infrastructure that scales fast — from phone systems to security — without overinvesting in hardware that becomes obsolete.",
+      },
+    ],
+    localStats: [
+      { label: "Fintech Startups in South Florida", value: "1,200+" },
+      { label: "Avg. IT Spend per SMB Employee", value: "$9,000/yr" },
+      { label: "Hurricanes Affecting FL (2020-2025)", value: "15+" },
+      { label: "SMBs in the Miami Metro", value: "380,000+" },
+    ],
+    nearbyAreas: [
+      "Fort Lauderdale",
+      "Coral Gables",
+      "Boca Raton",
+      "Doral",
+      "Hialeah",
+    ],
+    relatedArticles: [
+      "cloud-backup-disaster-recovery-smb",
+      "best-business-phone-system-small-business",
+      "what-is-edr-endpoint-detection-response",
+      "business-continuity-planning-guide",
+      "how-to-choose-it-reseller-var",
+    ],
+  },
+  {
+    slug: "houston",
+    city: "Houston",
+    state: "Texas",
+    country: "United States",
+    metaTitle: "IT Solutions & Cybersecurity Houston | Cyberstar IT",
+    metaDescription:
+      "Cyberstar IT provides phone systems, hardware, EDR, MDR, backup, and managed IT for Houston SMBs. Trusted IT reseller for energy sector and Texas businesses.",
+    heroHeadline: "IT Solutions for Houston Businesses",
+    heroSubline:
+      "Energy capital of the world with massive industrial cybersecurity needs — Cyberstar IT delivers the IT infrastructure and protection Houston businesses rely on.",
+    localContext: [
+      "Houston is the energy capital of the world and the fourth-largest city in the United States. Beyond oil and gas, the metro area is a major hub for healthcare (the Texas Medical Center is the largest medical complex globally), aerospace (NASA's Johnson Space Center), shipping, and manufacturing. This economic diversity creates enormous demand for IT services across multiple specialized industries.",
+      "The energy sector's increasing digitization has made industrial cybersecurity a top priority for Houston businesses. Operational technology (OT) environments in oil, gas, and petrochemical companies are prime targets for nation-state and criminal cyber attacks. Even businesses that don't operate in energy directly often serve the sector and must meet their cybersecurity requirements as vendors and partners.",
+      "Houston's flat geography and Gulf Coast location make it vulnerable to flooding and hurricanes, as demonstrated by Hurricane Harvey in 2017. Businesses learned hard lessons about data loss and communication failures, driving demand for cloud-based disaster recovery, redundant phone systems, and resilient IT infrastructure.",
+    ],
+    itChallenges: [
+      {
+        title: "Industrial Cybersecurity (OT/IT Convergence)",
+        description:
+          "Houston's energy and manufacturing companies face threats targeting operational technology. IT/OT convergence requires specialized endpoint detection, network segmentation, and monitoring.",
+      },
+      {
+        title: "Hurricane and Flood Disaster Recovery",
+        description:
+          "Hurricane Harvey destroyed on-premises IT infrastructure across the metro. Businesses need cloud backup, geographic redundancy, and tested disaster recovery plans.",
+      },
+      {
+        title: "Healthcare IT and HIPAA Compliance",
+        description:
+          "The Texas Medical Center ecosystem drives HIPAA requirements for thousands of Houston businesses, from clinics to medical device companies, requiring encrypted communications and compliant infrastructure.",
+      },
+      {
+        title: "Energy Sector Vendor Security Requirements",
+        description:
+          "Even non-energy SMBs serving oil and gas clients must meet strict vendor cybersecurity standards including NIST frameworks, SOC 2, and documented patch management processes.",
+      },
+    ],
+    localStats: [
+      { label: "Energy Companies in Houston", value: "4,600+" },
+      { label: "Avg. IT Spend per SMB Employee", value: "$9,400/yr" },
+      { label: "Cyber Attacks on TX Energy Sector/Year", value: "6,000+" },
+      { label: "SMBs in the Houston Metro", value: "420,000+" },
+    ],
+    nearbyAreas: [
+      "Sugar Land",
+      "The Woodlands",
+      "Katy",
+      "Pasadena",
+      "Pearland",
+    ],
+    relatedArticles: [
+      "what-is-edr-endpoint-detection-response",
+      "cloud-backup-disaster-recovery-smb",
+      "hipaa-compliance-it-checklist",
+      "what-is-mdr-managed-detection-response",
+      "patch-management-why-it-matters",
+    ],
+  },
+  {
+    slug: "san-francisco",
+    city: "San Francisco",
+    state: "California",
+    country: "United States",
+    metaTitle: "IT Solutions & Cybersecurity San Francisco | Cyberstar IT",
+    metaDescription:
+      "Cyberstar IT delivers phone systems, hardware, EDR, MDR, backup, and managed IT for San Francisco SMBs. Trusted IT reseller in the most competitive tech market in the US.",
+    heroHeadline: "IT Solutions for San Francisco Businesses",
+    heroSubline:
+      "In the world's most competitive tech market — Cyberstar IT gives SF businesses enterprise-grade phone systems, cybersecurity, and IT infrastructure without enterprise complexity.",
+    localContext: [
+      "San Francisco is the undisputed technology capital of the United States, home to the headquarters and offices of the world's largest tech companies alongside tens of thousands of startups and growth-stage businesses. The city's SMBs operate in the most technically sophisticated market in the country, where clients and partners expect best-in-class IT security and infrastructure as a baseline.",
+      "Despite the concentration of technical talent, small and medium businesses in San Francisco face some of the highest costs in the nation for IT staff, office space, and technology services. Hiring a full-time IT director in SF costs upward of $200,000 per year, making outsourced IT solutions and trusted VAR partnerships significantly more cost-effective for businesses under 200 employees.",
+      "California's CCPA/CPRA regulations, combined with the high-profile nature of operating in the Bay Area, mean that data breaches carry outsized reputational and legal risk. San Francisco businesses need proactive cybersecurity — endpoint detection, managed threat response, and continuous patch management — to meet both regulatory requirements and market expectations.",
+    ],
+    itChallenges: [
+      {
+        title: "Highest IT Talent Costs in the US",
+        description:
+          "With average IT salaries exceeding $150K and directors over $200K, SF SMBs cannot afford full in-house IT teams. Outsourced IT and VAR partnerships deliver enterprise capabilities at a fraction of the cost.",
+      },
+      {
+        title: "CCPA/CPRA Compliance Pressure",
+        description:
+          "California's strict privacy laws require documented security controls, data inventory, breach notification processes, and endpoint protection — all auditable on demand.",
+      },
+      {
+        title: "High Client Security Expectations",
+        description:
+          "In a city where your clients are tech companies, security due diligence is intense. SMBs need SOC 2 readiness, strong endpoint detection, and professional IT infrastructure to win and retain business.",
+      },
+      {
+        title: "Earthquake and Disaster Preparedness",
+        description:
+          "San Francisco sits on active fault lines. Cloud backup, geographic redundancy, and tested disaster recovery plans are critical for business continuity.",
+      },
+    ],
+    localStats: [
+      { label: "Tech Companies in SF Bay Area", value: "55,000+" },
+      { label: "Avg. IT Spend per SMB Employee", value: "$14,200/yr" },
+      { label: "Avg. IT Director Salary in SF", value: "$210,000+" },
+      { label: "SMBs in the SF Metro Area", value: "280,000+" },
+    ],
+    nearbyAreas: [
+      "Oakland",
+      "San Jose",
+      "Palo Alto",
+      "Berkeley",
+      "Fremont",
+    ],
+    relatedArticles: [
+      "ccpa-compliance-small-business-guide",
+      "what-is-edr-endpoint-detection-response",
+      "best-business-phone-system-small-business",
+      "soc2-readiness-smb-guide",
+      "how-to-choose-it-reseller-var",
+    ],
+  },
+];
+
+export function getCityBySlug(slug: string): CityPage | undefined {
+  return cityPages.find((city) => city.slug === slug);
+}

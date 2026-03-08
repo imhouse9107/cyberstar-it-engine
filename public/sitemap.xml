@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://cyberstarit.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://cyberstarit.com/blog</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Cluster: Phone Systems & VoIP -->
+  <url>
+    <loc>https://cyberstarit.com/blog/phone-systems-voip</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cluster: Business Hardware -->
+  <url>
+    <loc>https://cyberstarit.com/blog/business-hardware</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cluster: EDR & Endpoint Security -->
+  <url>
+    <loc>https://cyberstarit.com/blog/endpoint-security</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cluster: MDR & Managed Security -->
+  <url>
+    <loc>https://cyberstarit.com/blog/managed-detection-response</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cluster: Backup & Disaster Recovery -->
+  <url>
+    <loc>https://cyberstarit.com/blog/backup-disaster-recovery</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cluster: Patch Management -->
+  <url>
+    <loc>https://cyberstarit.com/blog/patch-management</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cluster: Cybersecurity for SMB -->
+  <url>
+    <loc>https://cyberstarit.com/blog/cybersecurity-smb</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cluster: IT Buying Guides -->
+  <url>
+    <loc>https://cyberstarit.com/blog/it-buying-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Articles will be added as content is published -->
+</urlset>

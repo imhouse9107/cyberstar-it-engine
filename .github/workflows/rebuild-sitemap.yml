@@ -1,0 +1,133 @@
+name: Rebuild Sitemap
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/data/blogPosts.ts'
+
+jobs:
+  rebuild-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Rebuild sitemap.xml
+        run: |
+          node -e "
+          const fs = require('fs');
+
+          const DOMAIN = 'https://cyberstarit.com';
+
+          const CLUSTER_SLUGS = [
+            'phone-systems-voip',
+            'business-hardware',
+            'endpoint-security',
+            'managed-detection-response',
+            'backup-disaster-recovery',
+            'patch-management',
+            'cybersecurity-smb',
+            'it-buying-guide',
+          ];
+
+          const CITY_SLUGS = [
+            'new-york',
+            'los-angeles',
+            'chicago',
+            'dallas',
+            'atlanta',
+            'miami',
+            'houston',
+            'san-francisco',
+          ];
+
+          // Parse blogPosts.ts
+          const raw = fs.readFileSync('src/data/blogPosts.ts', 'utf-8');
+          const posts = [];
+          const arrayMatch = raw.match(/blogPosts:\s*BlogPost\[\]\s*=\s*\[([\s\S]*?)\];/);
+          if (arrayMatch) {
+            const objRegex = /\{\s*slug:\s*[\"']([^\"']+)[\"'][\s\S]*?\}/g;
+            let m;
+            while ((m = objRegex.exec(arrayMatch[1])) !== null) {
+              const block = m[0];
+              const slug = m[1];
+              const cluster = (block.match(/cluster:\s*[\"']([^\"']+)[\"']/) || [])[1] || '';
+              posts.push({ slug, cluster });
+            }
+          }
+
+          // Build URL entries
+          const urls = [];
+
+          function addUrl(loc, changefreq, priority) {
+            // Verify no double-path
+            const path = loc.replace(DOMAIN, '');
+            if (/\/blog\/blog\//.test(path)) {
+              console.error('ERROR: Double-path detected: ' + loc);
+              process.exit(1);
+            }
+            urls.push({ loc, changefreq, priority });
+          }
+
+          // Homepage
+          addUrl(DOMAIN + '/', 'weekly', '1.0');
+
+          // Blog index
+          addUrl(DOMAIN + '/blog', 'daily', '0.9');
+
+          // Cluster pages
+          CLUSTER_SLUGS.forEach(function(cs) {
+            addUrl(DOMAIN + '/blog/' + cs, 'weekly', '0.8');
+          });
+
+          // City pages
+          CITY_SLUGS.forEach(function(city) {
+            addUrl(DOMAIN + '/' + city, 'monthly', '0.7');
+          });
+
+          // Article pages
+          posts.forEach(function(p) {
+            if (p.cluster) {
+              addUrl(DOMAIN + '/blog/' + p.cluster + '/' + p.slug, 'monthly', '0.7');
+            } else {
+              addUrl(DOMAIN + '/blog/' + p.slug, 'monthly', '0.7');
+            }
+          });
+
+          // Build XML
+          let xml = '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n';
+          xml += '<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n';
+          urls.forEach(function(u) {
+            xml += '  <url>\n';
+            xml += '    <loc>' + u.loc + '</loc>\n';
+            xml += '    <changefreq>' + u.changefreq + '</changefreq>\n';
+            xml += '    <priority>' + u.priority + '</priority>\n';
+            xml += '  </url>\n';
+          });
+          xml += '</urlset>\n';
+
+          fs.writeFileSync('public/sitemap.xml', xml, 'utf-8');
+          console.log('Sitemap rebuilt with ' + urls.length + ' URLs (' + posts.length + ' articles)');
+          "
+
+      - name: Check for changes and commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/sitemap.xml
+          if git diff --cached --quiet
+          then
+            echo "No sitemap changes to commit."
+          else
+            git commit -m "chore: rebuild sitemap.xml [automated]"
+            git push
+          fi

@@ -1,0 +1,42 @@
+name: Daily SEO Report
+
+on:
+  schedule:
+    # 9am EST = 14:00 UTC
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+
+jobs:
+  seo-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate SEO report
+        id: report
+        run: node scripts/generate-seo-report.cjs
+
+      - name: Read health score
+        id: score
+        run: |
+          SCORE=$(grep -oP 'HEALTH SCORE: \K[0-9]+' /tmp/cyberstar-seo-report.txt || echo "0")
+          echo "health_score=$SCORE" >> "$GITHUB_OUTPUT"
+
+      - name: Send HTML email report
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          to: henry@albatalent.io
+          from: "Cyberstar IT SEO Engine <${{ secrets.SMTP_USERNAME }}>"
+          subject: "Cyberstar IT SEO — Health Score: ${{ steps.score.outputs.health_score }}/100"
+          html_body: file:///tmp/cyberstar-seo-report.html
+          content_type: text/html
