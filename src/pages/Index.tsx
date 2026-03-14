@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import {
   DollarSign,
   Server,
@@ -10,7 +11,11 @@ import {
   Lock,
   Download,
   Star,
+  Menu,
+  X,
 } from "lucide-react";
+
+/* ─── Schema ──────────────────────────────────────────────── */
 
 const organizationSchema = {
   "@type": "Organization",
@@ -21,10 +26,7 @@ const organizationSchema = {
     "Trusted IT & cybersecurity solutions for US small and medium businesses.",
   logo: "https://cyberstarit.com/logo.png",
   sameAs: ["https://www.linkedin.com/company/cyberstar-it"],
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "US",
-  },
+  address: { "@type": "PostalAddress", addressCountry: "US" },
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "sales",
@@ -54,11 +56,7 @@ const professionalServiceSchema = {
   description:
     "Cybersecurity consulting and IT solutions for small and medium businesses",
   areaServed: "United States",
-  serviceType: [
-    "Cybersecurity Consulting",
-    "IT Solutions",
-    "Managed Security",
-  ],
+  serviceType: ["Cybersecurity Consulting", "IT Solutions", "Managed Security"],
   email: "info@cyberstarit.com",
 };
 
@@ -90,10 +88,7 @@ const faqSchema = {
   mainEntity: faqData.map((item) => ({
     "@type": "Question",
     name: item.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.a,
-    },
+    acceptedAnswer: { "@type": "Answer", text: item.a },
   })),
 };
 
@@ -140,6 +135,102 @@ const scorecardResults = [
   },
 ];
 
+/* ─── Nav ─────────────────────────────────────────────────── */
+
+function Nav() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-2">
+          <span
+            className="text-xl font-extrabold tracking-tight"
+            style={{ color: "var(--color-primary)" }}
+          >
+            CyberStar
+          </span>
+          <span className="text-xl font-light text-gray-400">IT</span>
+        </Link>
+
+        {/* Desktop nav */}
+        <nav className="hidden md:flex items-center gap-8">
+          <a
+            href="#pricing"
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            Pricing
+          </a>
+          <a
+            href="#faq"
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            FAQ
+          </a>
+          <Link
+            to="/blog"
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            Blog
+          </Link>
+          <a
+            href="#scorecard"
+            className="inline-flex items-center justify-center rounded-lg px-5 py-2 text-sm font-semibold text-white bg-[#38b2ac] hover:opacity-90 transition-opacity"
+          >
+            Get My Score
+          </a>
+        </nav>
+
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden p-2 text-gray-600"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
+        >
+          {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      {open && (
+        <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 flex flex-col gap-4">
+          <a
+            href="#pricing"
+            onClick={() => setOpen(false)}
+            className="text-sm font-medium text-gray-700"
+          >
+            Pricing
+          </a>
+          <a
+            href="#faq"
+            onClick={() => setOpen(false)}
+            className="text-sm font-medium text-gray-700"
+          >
+            FAQ
+          </a>
+          <Link
+            to="/blog"
+            onClick={() => setOpen(false)}
+            className="text-sm font-medium text-gray-700"
+          >
+            Blog
+          </Link>
+          <a
+            href="#scorecard"
+            onClick={() => setOpen(false)}
+            className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-white bg-[#38b2ac]"
+          >
+            Get My Score
+          </a>
+        </div>
+      )}
+    </header>
+  );
+}
+
+/* ─── Page ────────────────────────────────────────────────── */
+
 function Index() {
   const [scorecardEmail, setScorecardEmail] = useState("");
   const [scorecardCompany, setScorecardCompany] = useState("");
@@ -154,6 +245,10 @@ function Index() {
     setTimeout(() => {
       setScanning(false);
       setScorecardSubmitted(true);
+      window.open(
+        `mailto:info@cyberstarit.com?subject=Security Scorecard Request — ${encodeURIComponent(scorecardCompany)}&body=Company: ${encodeURIComponent(scorecardCompany)}%0AEmail: ${encodeURIComponent(scorecardEmail)}%0A%0APlease send my full security scorecard report.`,
+        "_blank"
+      );
     }, 3000);
   };
 
@@ -191,21 +286,22 @@ function Index() {
         </script>
       </Helmet>
 
+      <Nav />
+
       {/* SECTION 1: Hero */}
-      <section className="min-h-[90vh] flex items-center bg-white">
-        <div className="max-w-4xl mx-auto px-6 py-24 text-center">
+      <section className="min-h-[70vh] flex items-center bg-white">
+        <div className="max-w-4xl mx-auto px-6 py-16 text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 mb-6">
             Half your security tools are doing nothing. Want to know{" "}
             <span style={{ color: "var(--color-accent)" }}>which half?</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto mb-10">
+          <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto mb-8">
             We've saved companies over $2M by telling them what to stop paying
             for. Sometimes the best IT advice is "cancel that."
           </p>
           <a
             href="#scorecard"
-            className="inline-flex items-center justify-center rounded-lg px-10 py-4 min-h-[48px] text-lg font-semibold text-white transition-opacity hover:opacity-90 w-full sm:w-auto"
-            style={{ backgroundColor: "var(--color-accent)" }}
+            className="inline-flex items-center justify-center rounded-lg px-10 py-4 min-h-[48px] text-lg font-semibold text-white bg-[#38b2ac] hover:opacity-90 transition-opacity w-full sm:w-auto"
           >
             Find Out Which Half
           </a>
@@ -369,10 +465,7 @@ function Index() {
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
                 Find out what you actually need. And what you're overpaying for.
               </h2>
-              <p
-                className="mb-8"
-                style={{ color: "rgba(255,255,255,0.6)" }}
-              >
+              <p className="mb-8" style={{ color: "rgba(255,255,255,0.6)" }}>
                 Free security scorecard. 30 seconds. No pitch.
               </p>
 
@@ -387,7 +480,7 @@ function Index() {
                     placeholder="Work email"
                     value={scorecardEmail}
                     onChange={(e) => setScorecardEmail(e.target.value)}
-                    className="w-full rounded-lg px-4 py-3 min-h-[48px] text-white focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
+                    className="w-full rounded-lg px-4 py-3 min-h-[48px] text-white focus:outline-none focus:ring-2 focus:ring-[#38b2ac]"
                     style={{
                       backgroundColor: "rgba(255,255,255,0.1)",
                       border: "1px solid rgba(255,255,255,0.2)",
@@ -399,7 +492,7 @@ function Index() {
                     placeholder="Company name"
                     value={scorecardCompany}
                     onChange={(e) => setScorecardCompany(e.target.value)}
-                    className="w-full rounded-lg px-4 py-3 min-h-[48px] text-white focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
+                    className="w-full rounded-lg px-4 py-3 min-h-[48px] text-white focus:outline-none focus:ring-2 focus:ring-[#38b2ac]"
                     style={{
                       backgroundColor: "rgba(255,255,255,0.1)",
                       border: "1px solid rgba(255,255,255,0.2)",
@@ -407,8 +500,7 @@ function Index() {
                   />
                   <button
                     type="submit"
-                    className="w-full rounded-lg px-6 py-3 min-h-[48px] font-semibold text-white transition-opacity hover:opacity-90"
-                    style={{ backgroundColor: "var(--color-accent)" }}
+                    className="w-full rounded-lg px-6 py-3 min-h-[48px] font-semibold text-white bg-[#38b2ac] hover:opacity-90 transition-opacity"
                   >
                     Get My Free Scorecard
                   </button>
@@ -434,10 +526,13 @@ function Index() {
                     className="inline-block w-12 h-12 border-4 rounded-full animate-spin mb-4"
                     style={{
                       borderColor: "rgba(56,178,172,0.3)",
-                      borderTopColor: "var(--color-accent)",
+                      borderTopColor: "#38b2ac",
                     }}
                   />
-                  <p style={{ color: "rgba(255,255,255,0.7)" }} className="text-lg">
+                  <p
+                    style={{ color: "rgba(255,255,255,0.7)" }}
+                    className="text-lg"
+                  >
                     Scanning {scorecardCompany}...
                   </p>
                 </div>
@@ -487,13 +582,19 @@ function Index() {
                   ))}
                   <div className="pt-4">
                     <a
-                      href="mailto:info@cyberstarit.com"
-                      className="inline-flex items-center justify-center gap-2 w-full rounded-lg px-6 py-3 min-h-[48px] font-semibold text-white transition-opacity hover:opacity-90"
-                      style={{ backgroundColor: "var(--color-accent)" }}
+                      href={`mailto:info@cyberstarit.com?subject=Full Scorecard Report Request — ${encodeURIComponent(scorecardCompany)}`}
+                      className="inline-flex items-center justify-center gap-2 w-full rounded-lg px-6 py-3 min-h-[48px] font-semibold text-white bg-[#38b2ac] hover:opacity-90 transition-opacity"
                     >
                       <Download className="w-4 h-4" />
-                      Download Full Report
+                      Get My Full Report
                     </a>
+                    <p
+                      className="text-center text-xs mt-3"
+                      style={{ color: "rgba(255,255,255,0.4)" }}
+                    >
+                      We'll send your full report to {scorecardEmail} within 24
+                      hours.
+                    </p>
                   </div>
                 </div>
               )}
@@ -523,10 +624,7 @@ function Index() {
             },
           ].map(({ stat, question }) => (
             <div key={stat}>
-              <p
-                className="text-4xl md:text-5xl font-extrabold mb-3"
-                style={{ color: "var(--color-accent)" }}
-              >
+              <p className="text-4xl md:text-5xl font-extrabold mb-3 text-[#38b2ac]">
                 {stat}
               </p>
               <p
@@ -560,7 +658,7 @@ function Index() {
                   "We had 12 overlapping security tools and still failed our HIPAA audit. CyberStar looked at everything, told us what was redundant, and cut it. Then we passed. First time.",
                 name: "Sarah Chen",
                 title: "CFO",
-                tag: "MedVault Health. Healthcare. 45 people.",
+                tag: "MedVault Health, Healthcare, 45 people",
               },
               {
                 metric: "Same coverage. Half the tools. Fraction of the cost.",
@@ -568,7 +666,7 @@ function Index() {
                   "They didn't walk in with a pitch deck. They looked at what we already had, told us what was actually working, and saved us a fortune by killing the rest.",
                 name: "Marcus Johnson",
                 title: "Head of IT",
-                tag: "Apex Financial Group. Finance. 120 people.",
+                tag: "Apex Financial Group, Finance, 120 people",
               },
               {
                 metric: "SOC 2 in 8 weeks. Industry average is 6 months.",
@@ -576,7 +674,7 @@ function Index() {
                   "Every other vendor wanted to sell us their full stack. CyberStar told us exactly what a 40-person SaaS company actually needs. Nothing more. That's why we trust them.",
                 name: "Lisa Park",
                 title: "CEO",
-                tag: "BrightPath SaaS. 40 people.",
+                tag: "BrightPath SaaS, 40 people",
               },
             ].map((t) => (
               <div
@@ -603,7 +701,7 @@ function Index() {
                 </p>
                 <p className="font-bold text-gray-900">{t.name}</p>
                 <p className="text-sm text-gray-400">
-                  {t.title} — {t.tag}
+                  {t.title}, {t.tag}
                 </p>
               </div>
             ))}
@@ -621,7 +719,7 @@ function Index() {
             We publish this because no one else will. If a vendor hides their
             pricing, ask yourself what else they're hiding.
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 items-stretch">
             {[
               {
                 name: "Essentials",
@@ -661,20 +759,19 @@ function Index() {
             ].map((tier) => (
               <div
                 key={tier.name}
-                className="bg-white rounded-xl p-8 shadow-sm"
+                className="bg-white rounded-xl p-8 shadow-sm flex flex-col"
                 style={
                   tier.highlight
-                    ? { border: "2px solid var(--color-accent)" }
+                    ? { border: "2px solid #38b2ac" }
                     : { border: "1px solid #e5e7eb" }
                 }
               >
-                {tier.highlight && (
-                  <div
-                    className="inline-block text-xs font-bold px-3 py-1 rounded-full text-white mb-4"
-                    style={{ backgroundColor: "var(--color-accent)" }}
-                  >
+                {tier.highlight ? (
+                  <div className="inline-block text-xs font-bold px-3 py-1 rounded-full text-white mb-4 bg-[#38b2ac] self-start">
                     Most Popular
                   </div>
+                ) : (
+                  <div className="h-[29px] mb-4" />
                 )}
                 <h3 className="text-xl font-bold text-gray-900 mb-1">
                   {tier.name}
@@ -683,24 +780,20 @@ function Index() {
                 <p className="text-2xl font-extrabold text-gray-900 mb-6">
                   {tier.price}
                 </p>
-                <ul className="space-y-2 mb-8">
+                <ul className="space-y-2 mb-8 flex-1">
                   {tier.features.map((f) => (
                     <li
                       key={f}
                       className="flex items-center gap-2 text-sm text-gray-600"
                     >
-                      <span
-                        className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                        style={{ backgroundColor: "var(--color-accent)" }}
-                      />
+                      <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-[#38b2ac]" />
                       {f}
                     </li>
                   ))}
                 </ul>
                 <a
                   href="#scorecard"
-                  className="block text-center w-full rounded-lg px-6 py-3 min-h-[48px] font-semibold text-white transition-opacity hover:opacity-90"
-                  style={{ backgroundColor: "var(--color-accent)" }}
+                  className="block text-center w-full rounded-lg px-6 py-3 min-h-[48px] font-semibold text-white bg-[#38b2ac] hover:opacity-90 transition-opacity"
                 >
                   Get a Custom Quote
                 </a>
@@ -767,8 +860,7 @@ function Index() {
           </p>
           <a
             href="#scorecard"
-            className="inline-flex items-center justify-center rounded-lg px-10 py-4 min-h-[48px] text-lg font-semibold text-white transition-opacity hover:opacity-90 w-full sm:w-auto"
-            style={{ backgroundColor: "var(--color-accent)" }}
+            className="inline-flex items-center justify-center rounded-lg px-10 py-4 min-h-[48px] text-lg font-semibold text-white bg-[#38b2ac] hover:opacity-90 transition-opacity w-full sm:w-auto"
           >
             Find Out Which Half
           </a>
@@ -782,15 +874,74 @@ function Index() {
       </section>
 
       {/* SECTION 12: Footer */}
-      <footer
-        className="py-8 text-center text-sm"
-        style={{
-          backgroundColor: "#0a1628",
-          color: "rgba(255,255,255,0.35)",
-        }}
-      >
-        <p>&copy; 2026 CyberStar IT. All rights reserved.</p>
-        <p className="mt-1">info@cyberstarit.com</p>
+      <footer className="bg-[#0a1628] text-white py-12">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between gap-8 mb-8">
+            <div>
+              <p className="text-lg font-extrabold tracking-tight mb-2">
+                CyberStar IT
+              </p>
+              <p
+                className="text-sm"
+                style={{ color: "rgba(255,255,255,0.4)" }}
+              >
+                The cybersecurity company that tells you what you don't need.
+              </p>
+              <p
+                className="text-sm mt-2"
+                style={{ color: "rgba(255,255,255,0.4)" }}
+              >
+                info@cyberstarit.com
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <p
+                className="text-xs font-semibold uppercase tracking-wider"
+                style={{ color: "rgba(255,255,255,0.3)" }}
+              >
+                Navigate
+              </p>
+              <a
+                href="#scorecard"
+                className="text-sm hover:text-white transition-colors"
+                style={{ color: "rgba(255,255,255,0.55)" }}
+              >
+                Free Score
+              </a>
+              <a
+                href="#pricing"
+                className="text-sm hover:text-white transition-colors"
+                style={{ color: "rgba(255,255,255,0.55)" }}
+              >
+                Pricing
+              </a>
+              <a
+                href="#faq"
+                className="text-sm hover:text-white transition-colors"
+                style={{ color: "rgba(255,255,255,0.55)" }}
+              >
+                FAQ
+              </a>
+              <Link
+                to="/blog"
+                className="text-sm hover:text-white transition-colors"
+                style={{ color: "rgba(255,255,255,0.55)" }}
+              >
+                Blog
+              </Link>
+            </div>
+          </div>
+          <div
+            className="border-t pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs"
+            style={{
+              borderColor: "rgba(255,255,255,0.1)",
+              color: "rgba(255,255,255,0.3)",
+            }}
+          >
+            <p>&copy; 2026 CyberStar IT. All rights reserved.</p>
+            <p>Serving US small and medium businesses. Based remotely, US-wide.</p>
+          </div>
+        </div>
       </footer>
     </>
   );

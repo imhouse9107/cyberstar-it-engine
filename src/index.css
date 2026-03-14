@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@theme {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #38b2ac;
+  --color-accent-light: #4fd1c5;
+}
+
 @layer base {
   :root {
     --color-primary: #1e3a5f;
