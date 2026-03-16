@@ -63,7 +63,7 @@ You cannot patch what you do not know exists. Start by cataloging every Linux sy
 - Containers and container hosts
 - Network appliances running embedded Linux (firewalls, NAS, IoT devices)
 
-Tools like Ansible, NinjaOne, and Datto RMM can automate discovery and maintain a real-time inventory. At Cyberstar IT, this inventory step is the first layer of our 5-Star Cyber Shield methodology — because you cannot protect what you cannot see.
+Tools like Ansible, NinjaOne, and Datto RMM can automate discovery and maintain a real-time inventory. At CyberStar IT, this inventory step is the first layer of our 5-Star Cyber Shield methodology — because you cannot protect what you cannot see.
 
 ### Step 2: Classification and Prioritization
 
@@ -159,7 +159,7 @@ Edit \`/etc/apt/apt.conf.d/50unattended-upgrades\` to control which updates are 
 
 ### Option 3: Centralized RMM Platform
 
-For businesses that also manage Windows and macOS devices, using an RMM platform like NinjaOne or Automox provides a single pane of glass for all patching. This approach is especially valuable when working with a managed IT provider like Cyberstar IT, where visibility across all systems is essential.
+For businesses that also manage Windows and macOS devices, using an RMM platform like NinjaOne or Automox provides a single pane of glass for all patching. This approach is especially valuable when working with a managed IT provider like CyberStar IT, where visibility across all systems is essential.
 
 ## Kernel Patching Without Downtime
 
@@ -210,7 +210,7 @@ A written policy ensures consistency and accountability. Your policy should defi
 6. **Exception process**: How to document and track systems that cannot be patched immediately
 7. **Reporting cadence**: Weekly compliance reports to IT leadership
 
-This policy should align with your broader security framework. At Cyberstar IT, patch management policy development is built into our 5-Star Cyber Shield assessment, ensuring it integrates with your overall security posture rather than existing in isolation.
+This policy should align with your broader security framework. At CyberStar IT, patch management policy development is built into our 5-Star Cyber Shield assessment, ensuring it integrates with your overall security posture rather than existing in isolation.
 
 ## Frequently Asked Questions
 
@@ -402,7 +402,7 @@ Configure your patching tool to:
 
 Track patch compliance rates by application, department, and severity. Target a compliance rate of 95% or higher across all devices. This data is essential for compliance audits (CIS Controls, NIST, PCI DSS) and for identifying devices or applications that consistently fall behind.
 
-At Cyberstar IT, third-party patch management monitoring is integrated into our 5-Star Cyber Shield framework. We track compliance across every application, not just the operating system, because attackers do not distinguish between OS and application vulnerabilities.
+At CyberStar IT, third-party patch management monitoring is integrated into our 5-Star Cyber Shield framework. We track compliance across every application, not just the operating system, because attackers do not distinguish between OS and application vulnerabilities.
 
 ## Third-Party Patching for Specific Environments
 
@@ -621,7 +621,7 @@ Most mature SMBs use a hybrid approach:
 - **Third-party application patches**: Phased rollout with automated promotion after 48-hour soak
 - **Server patches**: Always phased, always during maintenance windows, always with snapshots
 
-This hybrid approach is the foundation of how Cyberstar IT manages patching for our clients through our 5-Star Cyber Shield methodology. We categorize every patch by risk level and deploy accordingly — never one-size-fits-all.
+This hybrid approach is the foundation of how CyberStar IT manages patching for our clients through our 5-Star Cyber Shield methodology. We categorize every patch by risk level and deploy accordingly — never one-size-fits-all.
 
 ## Patch Deployment Best Practices
 
@@ -915,7 +915,7 @@ Auditors and insurance underwriters need evidence. Your patch management program
 - **Scan results**: Vulnerability scan reports showing before/after patch status
 - **Policy documentation**: The written policy with approval signatures and review dates
 
-At Cyberstar IT, compliance evidence generation is automated as part of our 5-Star Cyber Shield service. Every client receives monthly patch compliance reports that map directly to their applicable frameworks, ready for auditor review.
+At CyberStar IT, compliance evidence generation is automated as part of our 5-Star Cyber Shield service. Every client receives monthly patch compliance reports that map directly to their applicable frameworks, ready for auditor review.
 
 ### Step 5: Continuous Improvement
 
@@ -1228,7 +1228,7 @@ By 90 days, the MDR service should be running smoothly:
 
 After the initial period, MDR becomes a steady-state service with 24/7 monitoring, monthly security reports, quarterly business reviews, and continuous tuning as your environment evolves.
 
-At Cyberstar IT, MDR implementation is the detection and response pillar of our 5-Star Cyber Shield methodology. We manage the entire implementation process on behalf of our clients, serving as the bridge between the MDR vendor and the client's environment — ensuring nothing falls through the cracks.
+At CyberStar IT, MDR implementation is the detection and response pillar of our 5-Star Cyber Shield methodology. We manage the entire implementation process on behalf of our clients, serving as the bridge between the MDR vendor and the client's environment — ensuring nothing falls through the cracks.
 
 ## Common MDR Implementation Pitfalls
 
@@ -1276,7 +1276,7 @@ If a real threat is detected during implementation, the MDR team will respond ac
 
 ### Can I implement MDR myself without a managed IT provider?
 
-Yes, but it is more complex. MDR vendors provide implementation support, but having a managed IT provider like Cyberstar IT serving as the implementation lead streamlines the process significantly. We handle agent deployment, integration configuration, and tuning coordination so you do not have to divert internal resources.
+Yes, but it is more complex. MDR vendors provide implementation support, but having a managed IT provider like CyberStar IT serving as the implementation lead streamlines the process significantly. We handle agent deployment, integration configuration, and tuning coordination so you do not have to divert internal resources.
 
 ### How do I measure whether my MDR implementation was successful?
 
@@ -1402,7 +1402,7 @@ This hybrid approach provides:
 - Cost savings vs. full SOC-as-a-Service
 - Reduced internal staffing requirements
 
-At Cyberstar IT, we frequently implement this hybrid model for clients who need both threat response capability and compliance-grade log retention. It is a core component of our 5-Star Cyber Shield methodology — ensuring that detection, response, and compliance all work together.
+At CyberStar IT, we frequently implement this hybrid model for clients who need both threat response capability and compliance-grade log retention. It is a core component of our 5-Star Cyber Shield methodology — ensuring that detection, response, and compliance all work together.
 
 ## Evaluating MDR Vendors
 
@@ -1677,7 +1677,7 @@ Use this checklist when reviewing MDR contracts:
 - Data ownership and portability confirmed
 - Liability cap reviewed and negotiated
 
-At Cyberstar IT, SLA review is a standard part of our vendor evaluation process within the 5-Star Cyber Shield framework. We review MDR contracts on behalf of our clients to ensure the SLA provides real protection — not just marketing language.
+At CyberStar IT, SLA review is a standard part of our vendor evaluation process within the 5-Star Cyber Shield framework. We review MDR contracts on behalf of our clients to ensure the SLA provides real protection — not just marketing language.
 
 ## Frequently Asked Questions
 
@@ -1905,7 +1905,7 @@ When using cloud Object Lock, always choose Compliance Mode over Governance Mode
 
 ## Immutable Backups and the 5-Star Cyber Shield
 
-At Cyberstar IT, immutable backup implementation is a core component of our 5-Star Cyber Shield methodology. We configure, monitor, and test immutable backup systems for our clients because backup is the last line of defense — and it needs to hold when everything else has failed.
+At CyberStar IT, immutable backup implementation is a core component of our 5-Star Cyber Shield methodology. We configure, monitor, and test immutable backup systems for our clients because backup is the last line of defense — and it needs to hold when everything else has failed.
 
 Our standard implementation includes:
 - Local backup to a hardened repository for fast recovery
@@ -2204,7 +2204,7 @@ After every DR test, produce a report that includes:
 
 This documentation serves double duty: it improves your DR capability AND provides compliance evidence for frameworks like SOC 2, HIPAA, PCI DSS, and CIS Controls.
 
-At Cyberstar IT, DR testing is built into our managed service delivery as part of the 5-Star Cyber Shield methodology. We conduct quarterly component tests and semi-annual simulation tests for every client, with documented results that satisfy auditor requirements.
+At CyberStar IT, DR testing is built into our managed service delivery as part of the 5-Star Cyber Shield methodology. We conduct quarterly component tests and semi-annual simulation tests for every client, with documented results that satisfy auditor requirements.
 
 ## Frequently Asked Questions
 
@@ -2238,7 +2238,7 @@ Frame it in business terms: "73% of businesses that never test their DR plan fai
 
 ### Can my MSP handle DR testing for me?
 
-Yes. A managed IT provider like Cyberstar IT conducts DR testing as part of ongoing managed services. We handle the planning, execution, documentation, and remediation of findings — so your internal team does not have to divert from their day-to-day responsibilities.
+Yes. A managed IT provider like CyberStar IT conducts DR testing as part of ongoing managed services. We handle the planning, execution, documentation, and remediation of findings — so your internal team does not have to divert from their day-to-day responsibilities.
 
 ## Sources
 
@@ -2288,7 +2288,7 @@ Backup replication continuously or periodically copies data from a primary locat
 - **Secondary on-premise server**: Physical or virtual server in the same building or a second office
 - **Cloud infrastructure**: Azure Site Recovery, AWS Disaster Recovery, Zerto Cloud
 - **Colocation facility**: Dedicated hardware in a third-party data center
-- **MSP-hosted DR**: Your managed IT provider hosts the replica (Cyberstar IT offers this as part of our 5-Star Cyber Shield)
+- **MSP-hosted DR**: Your managed IT provider hosts the replica (CyberStar IT offers this as part of our 5-Star Cyber Shield)
 
 ### What Replication Protects Against
 
@@ -2451,7 +2451,7 @@ Replication consumes network bandwidth. A 2 TB file server generating 50 GB of c
 
 ## Replication and Snapshots in the 5-Star Cyber Shield
 
-At Cyberstar IT, we implement layered data protection as part of our 5-Star Cyber Shield methodology:
+At CyberStar IT, we implement layered data protection as part of our 5-Star Cyber Shield methodology:
 
 - **Snapshots** provide instant rollback for operational issues (accidental deletions, failed updates)
 - **Local replication** provides fast recovery from hardware failure

@@ -21,7 +21,7 @@ function BlogCluster() {
     url: canonicalUrl,
     publisher: {
       "@type": "Organization",
-      name: "Cyberstar IT",
+      name: "CyberStar IT",
       url: "https://cyberstarit.com",
     },
     mainEntity: {
@@ -38,20 +38,20 @@ function BlogCluster() {
   return (
     <>
       <Helmet>
-        <title>{cluster.title} | Cyberstar IT Blog</title>
+        <title>{cluster.title} | CyberStar IT Blog</title>
         <meta name="description" content={cluster.metaDescription} />
         <link rel="canonical" href={canonicalUrl} />
 
-        <meta property="og:title" content={`${cluster.title} | Cyberstar IT`} />
+        <meta property="og:title" content={`${cluster.title} | CyberStar IT`} />
         <meta property="og:description" content={cluster.metaDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Cyberstar IT" />
+        <meta property="og:site_name" content="CyberStar IT" />
 
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
-          content={`${cluster.title} | Cyberstar IT`}
+          content={`${cluster.title} | CyberStar IT`}
         />
         <meta name="twitter:description" content={cluster.metaDescription} />
 

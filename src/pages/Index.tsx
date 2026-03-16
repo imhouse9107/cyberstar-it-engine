@@ -20,7 +20,7 @@ import {
 const organizationSchema = {
   "@type": "Organization",
   "@id": "https://cyberstarit.com/#organization",
-  name: "Cyberstar IT",
+  name: "CyberStar IT",
   url: "https://cyberstarit.com",
   description:
     "Trusted IT & cybersecurity solutions for US small and medium businesses.",
@@ -37,7 +37,7 @@ const organizationSchema = {
 
 const webSiteSchema = {
   "@type": "WebSite",
-  name: "Cyberstar IT",
+  name: "CyberStar IT",
   url: "https://cyberstarit.com",
   description:
     "Trusted IT & cybersecurity solutions for US small and medium businesses.",
@@ -51,7 +51,7 @@ const webSiteSchema = {
 
 const professionalServiceSchema = {
   "@type": "ProfessionalService",
-  name: "Cyberstar IT",
+  name: "CyberStar IT",
   url: "https://cyberstarit.com",
   description:
     "Cybersecurity consulting and IT solutions for small and medium businesses",

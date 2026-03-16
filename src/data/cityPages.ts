@@ -20,12 +20,12 @@ export const cityPages: CityPage[] = [
     city: "New York",
     state: "New York",
     country: "United States",
-    metaTitle: "IT Solutions & Cybersecurity New York | Cyberstar IT",
+    metaTitle: "IT Solutions & Cybersecurity New York | CyberStar IT",
     metaDescription:
-      "Cyberstar IT provides phone systems, hardware, EDR, MDR, backup, and patch management for New York City SMBs. Trusted IT reseller for businesses up to 200 employees.",
+      "CyberStar IT provides phone systems, hardware, EDR, MDR, backup, and patch management for New York City SMBs. Trusted IT reseller for businesses up to 200 employees.",
     heroHeadline: "IT Solutions for New York Businesses",
     heroSubline:
-      "From the Financial District's trading floors to Midtown's corporate towers and Silicon Alley startups in Flatiron — Cyberstar IT delivers phone systems, cybersecurity, and infrastructure built for the pace of NYC.",
+      "From the Financial District's trading floors to Midtown's corporate towers and Silicon Alley startups in Flatiron — CyberStar IT delivers phone systems, cybersecurity, and infrastructure built for the pace of NYC.",
     localContext: [
       "New York City is home to over 200,000 technology companies and the largest concentration of financial services firms in the world. From the hedge funds clustered around Park Avenue and Greenwich to the media empires headquartered in Hudson Yards, small and medium businesses operating in this environment face intense competition for IT talent and rising cybersecurity threats — particularly under NYDFS 23 NYCRR 500, SEC, and FINRA regulations that mandate specific cybersecurity controls, incident response plans, and annual compliance certifications.",
       "The city's five boroughs each power distinct industries with unique IT demands. Manhattan's Financial District and Midtown East are dense with financial services and law firms requiring encrypted communications and audit-ready systems. Brooklyn's DUMBO and Williamsburg tech corridors house fast-growing startups that need scalable cloud infrastructure. The Brooklyn Navy Yard and Long Island City's growing commercial districts are home to healthcare providers, logistics firms, and creative agencies — all needing enterprise-grade security on SMB budgets.",
@@ -79,12 +79,12 @@ export const cityPages: CityPage[] = [
     city: "Los Angeles",
     state: "California",
     country: "United States",
-    metaTitle: "IT Solutions & Cybersecurity Los Angeles | Cyberstar IT",
+    metaTitle: "IT Solutions & Cybersecurity Los Angeles | CyberStar IT",
     metaDescription:
-      "Cyberstar IT delivers phone systems, hardware, cybersecurity, and managed IT services to Los Angeles SMBs. Trusted VAR for businesses up to 200 employees.",
+      "CyberStar IT delivers phone systems, hardware, cybersecurity, and managed IT services to Los Angeles SMBs. Trusted VAR for businesses up to 200 employees.",
     heroHeadline: "IT Solutions for Los Angeles Businesses",
     heroSubline:
-      "From Hollywood studios and Silicon Beach startups to the aerospace giants of El Segundo — Cyberstar IT provides the phone systems, cybersecurity, and IT infrastructure LA businesses depend on.",
+      "From Hollywood studios and Silicon Beach startups to the aerospace giants of El Segundo — CyberStar IT provides the phone systems, cybersecurity, and IT infrastructure LA businesses depend on.",
     localContext: [
       "Los Angeles is the second-largest metro economy in the United States and a global center for entertainment, media, aerospace, and fashion technology. The Silicon Beach corridor — stretching from Playa Vista to Santa Monica and Venice — has attracted thousands of tech startups and major players like Google, Snap, and Hulu. Meanwhile, the revitalized Arts District and Downtown LA's Financial District house growing professional services firms, and the San Fernando Valley remains a powerhouse for post-production studios and aerospace contractors clustered near Northrop Grumman and JPL in Pasadena.",
       "Small and medium businesses in LA face unique challenges including California's strict CCPA/CPRA data privacy regulations (which carry fines up to $7,500 per intentional violation), high employee churn, and the need to support creative workflows that demand high-bandwidth networks and specialized hardware. Studios along the Burbank Media District and post-production houses in Culver City need large file transfer capabilities, secure dailies review systems, and collaboration tools that protect unreleased content worth millions.",
@@ -138,12 +138,12 @@ export const cityPages: CityPage[] = [
     city: "Chicago",
     state: "Illinois",
     country: "United States",
-    metaTitle: "IT Solutions & Cybersecurity Chicago | Cyberstar IT",
+    metaTitle: "IT Solutions & Cybersecurity Chicago | CyberStar IT",
     metaDescription:
-      "Cyberstar IT provides phone systems, hardware, EDR, MDR, backup, and managed IT for Chicago SMBs. Trusted IT reseller for Midwest businesses up to 200 employees.",
+      "CyberStar IT provides phone systems, hardware, EDR, MDR, backup, and managed IT for Chicago SMBs. Trusted IT reseller for Midwest businesses up to 200 employees.",
     heroHeadline: "IT Solutions for Chicago Businesses",
     heroSubline:
-      "From the Loop's financial towers to River North's tech startups and the manufacturing floors across Chicagoland — Cyberstar IT delivers the IT infrastructure and cybersecurity your business needs.",
+      "From the Loop's financial towers to River North's tech startups and the manufacturing floors across Chicagoland — CyberStar IT delivers the IT infrastructure and cybersecurity your business needs.",
     localContext: [
       "Chicago is the economic engine of the Midwest, anchoring a metro area with strengths in manufacturing, financial services, logistics, healthcare, and professional services. The Loop and LaSalle Street corridor house some of the nation's largest trading firms and commodity exchanges, including the CME Group and Cboe. River North and Fulton Market have emerged as Chicago's tech and startup hub, home to offices for Google, Salesforce, and hundreds of growth-stage companies. The city's central location and robust fiber infrastructure — anchored by the 350 East Cermak data center, one of the largest in the world — make it a major connectivity hub.",
       "Small and medium businesses in Chicagoland operate in a market where IT modernization is accelerating rapidly. Manufacturing firms along the I-88 corridor and in suburban industrial parks from Elk Grove Village to Joliet are investing in industrial cybersecurity and IoT protection. Financial services companies in the Loop need compliance-ready endpoint detection, and the professional services firms clustered around Wacker Drive and Michigan Avenue are migrating to cloud-based phone systems and collaboration platforms. Healthcare organizations connected to Northwestern Medicine, Rush, and the University of Chicago Medical Center drive significant HIPAA compliance demand.",
@@ -197,12 +197,12 @@ export const cityPages: CityPage[] = [
     city: "Dallas",
     state: "Texas",
     country: "United States",
-    metaTitle: "IT Solutions & Cybersecurity Dallas | Cyberstar IT",
+    metaTitle: "IT Solutions & Cybersecurity Dallas | CyberStar IT",
     metaDescription:
-      "Cyberstar IT delivers phone systems, hardware, EDR, MDR, backup, and managed IT for Dallas-Fort Worth SMBs. Trusted IT reseller for Texas businesses up to 200 employees.",
+      "CyberStar IT delivers phone systems, hardware, EDR, MDR, backup, and managed IT for Dallas-Fort Worth SMBs. Trusted IT reseller for Texas businesses up to 200 employees.",
     heroHeadline: "IT Solutions for Dallas Businesses",
     heroSubline:
-      "From the Telecom Corridor in Richardson to the energy companies along the Dallas North Tollway — Cyberstar IT equips DFW businesses with the technology to compete in one of America's fastest-growing metros.",
+      "From the Telecom Corridor in Richardson to the energy companies along the Dallas North Tollway — CyberStar IT equips DFW businesses with the technology to compete in one of America's fastest-growing metros.",
     localContext: [
       "The Dallas-Fort Worth metroplex is one of the fastest-growing business regions in the United States, fueled by major corporate relocations, a business-friendly tax environment, and a deep telecom and technology heritage. The Richardson Telecom Corridor — anchored by AT&T's global headquarters and home to Texas Instruments, Ericsson, and over 5,000 tech companies — is one of the densest technology corridors in the country. Uptown Dallas and the Legacy West district in Plano have become magnets for corporate HQs, with Toyota, Liberty Mutual, and JPMorgan Chase all establishing major campuses along the Dallas North Tollway.",
       "Small and medium businesses in Dallas benefit from competitive commercial real estate and a growing talent pool fueled by UT Dallas, SMU, and the region's expanding tech workforce. But DFW's economic prominence makes it a higher-value cybersecurity target. Healthcare organizations in the massive Medical City complex, professional services firms along the LBJ Freeway corridor, and the logistics companies clustered near DFW International Airport and Alliance Airport all need robust IT infrastructure that can scale with the rapid growth typical of the metroplex.",
@@ -256,12 +256,12 @@ export const cityPages: CityPage[] = [
     city: "Atlanta",
     state: "Georgia",
     country: "United States",
-    metaTitle: "IT Solutions & Cybersecurity Atlanta | Cyberstar IT",
+    metaTitle: "IT Solutions & Cybersecurity Atlanta | CyberStar IT",
     metaDescription:
-      "Cyberstar IT provides phone systems, hardware, EDR, MDR, backup, and managed IT for Atlanta SMBs. Trusted cybersecurity and IT reseller for Georgia businesses.",
+      "CyberStar IT provides phone systems, hardware, EDR, MDR, backup, and managed IT for Atlanta SMBs. Trusted cybersecurity and IT reseller for Georgia businesses.",
     heroHeadline: "IT Solutions for Atlanta Businesses",
     heroSubline:
-      "Home to the largest concentration of Fortune 500 companies in the Southeast — from Buckhead's corporate towers to Midtown's tech corridor — Cyberstar IT helps Atlanta SMBs protect their operations with enterprise-grade IT and security solutions.",
+      "Home to the largest concentration of Fortune 500 companies in the Southeast — from Buckhead's corporate towers to Midtown's tech corridor — CyberStar IT helps Atlanta SMBs protect their operations with enterprise-grade IT and security solutions.",
     localContext: [
       "Atlanta has established itself as a national leader in cybersecurity, with major security firms, government agencies, and the Georgia Tech Information Security Center (GTISC) anchoring a thriving ecosystem. The city is headquarters to cybersecurity giants like NCR Voyix, Secureworks, and a growing cluster of startups in the Atlanta Tech Village — one of the largest tech hubs in the Southeast. Beyond security, Atlanta is a powerhouse in logistics (home to UPS, Delta Air Lines, and the world's busiest airport at Hartsfield-Jackson), fintech (with the Transaction Alley corridor processing over 70% of US card transactions through Fiserv, Global Payments, and NCR), and film production (Pinewood Studios and Tyler Perry Studios drive a $4B industry).",
       "Small and medium businesses in Atlanta benefit from a strong talent pipeline from Georgia Tech, Emory, and Georgia State, along with a growing venture capital presence. But the city's prominence in cybersecurity also means local businesses are held to higher expectations by customers and partners. The devastating 2018 ransomware attack on Atlanta's city government — which cost over $17 million to remediate — was a wake-up call that businesses of all sizes are targets.",
@@ -315,12 +315,12 @@ export const cityPages: CityPage[] = [
     city: "Miami",
     state: "Florida",
     country: "United States",
-    metaTitle: "IT Solutions & Cybersecurity Miami | Cyberstar IT",
+    metaTitle: "IT Solutions & Cybersecurity Miami | CyberStar IT",
     metaDescription:
-      "Cyberstar IT delivers phone systems, hardware, EDR, MDR, backup, and disaster recovery for Miami SMBs. Trusted IT reseller for South Florida businesses.",
+      "CyberStar IT delivers phone systems, hardware, EDR, MDR, backup, and disaster recovery for Miami SMBs. Trusted IT reseller for South Florida businesses.",
     heroHeadline: "IT Solutions for Miami Businesses",
     heroSubline:
-      "Gateway to Latin America, home to Brickell's booming fintech corridor and Wynwood's startup scene — Cyberstar IT protects Miami businesses with reliable IT infrastructure, cybersecurity, and disaster recovery.",
+      "Gateway to Latin America, home to Brickell's booming fintech corridor and Wynwood's startup scene — CyberStar IT protects Miami businesses with reliable IT infrastructure, cybersecurity, and disaster recovery.",
     localContext: [
       "Miami has transformed into one of the most dynamic business cities in the United States, driven by a fintech boom, Latin American trade connections, and a wave of tech company relocations from Silicon Valley and New York. The Brickell Financial District — often called the 'Wall Street of the South' — is packed with hedge funds, fintech startups, and international banking operations. Wynwood and the Miami Design District have become hotbeds for creative tech companies, while Doral's growing business parks serve as logistics and trade hubs connecting US businesses to Latin America and the Caribbean.",
       "South Florida's small and medium businesses face a unique combination of challenges: hurricane season demands robust disaster recovery and cloud backup, the fintech and crypto sectors clustered around Brickell and Miami Beach (where FTX and other crypto firms established presence) require stringent compliance controls, and the region's explosive growth means IT infrastructure must be built to scale quickly. The healthcare ecosystem around Jackson Memorial Hospital and the University of Miami Health System, the cruise industry headquartered at PortMiami, and the international trade operations flowing through Miami International Airport all drive demand for reliable phone systems and cybersecurity.",
@@ -374,12 +374,12 @@ export const cityPages: CityPage[] = [
     city: "Houston",
     state: "Texas",
     country: "United States",
-    metaTitle: "IT Solutions & Cybersecurity Houston | Cyberstar IT",
+    metaTitle: "IT Solutions & Cybersecurity Houston | CyberStar IT",
     metaDescription:
-      "Cyberstar IT provides phone systems, hardware, EDR, MDR, backup, and managed IT for Houston SMBs. Trusted IT reseller for energy sector and Texas businesses.",
+      "CyberStar IT provides phone systems, hardware, EDR, MDR, backup, and managed IT for Houston SMBs. Trusted IT reseller for energy sector and Texas businesses.",
     heroHeadline: "IT Solutions for Houston Businesses",
     heroSubline:
-      "Energy capital of the world, home to the Texas Medical Center and NASA's Johnson Space Center — Cyberstar IT delivers the IT infrastructure and industrial-grade cybersecurity Houston businesses rely on.",
+      "Energy capital of the world, home to the Texas Medical Center and NASA's Johnson Space Center — CyberStar IT delivers the IT infrastructure and industrial-grade cybersecurity Houston businesses rely on.",
     localContext: [
       "Houston is the energy capital of the world and the fourth-largest city in the United States. The Energy Corridor along I-10 West — home to BP America, ConocoPhillips, and Shell's US headquarters — anchors a concentration of oil, gas, and petrochemical companies unmatched anywhere on Earth. Beyond energy, the Texas Medical Center in the South Main district is the largest medical complex globally with over 60 institutions including MD Anderson Cancer Center, Houston Methodist, and Baylor College of Medicine. NASA's Johnson Space Center in Clear Lake and the Port of Houston — the nation's largest port by foreign tonnage — round out an economy that demands sophisticated IT across every sector.",
       "The energy sector's increasing digitization has made industrial cybersecurity a top priority. Operational technology (OT) environments along the Houston Ship Channel and in the petrochemical plants of Baytown and La Porte are prime targets for nation-state and criminal cyber attacks. Even SMBs in the Galleria area, Greenway Plaza, and the Westchase District that don't operate in energy directly often serve the sector as vendors and must meet stringent cybersecurity requirements including NIST CSF, API standards, and NERC CIP compliance for grid-connected operations.",
@@ -433,12 +433,12 @@ export const cityPages: CityPage[] = [
     city: "San Francisco",
     state: "California",
     country: "United States",
-    metaTitle: "IT Solutions & Cybersecurity San Francisco | Cyberstar IT",
+    metaTitle: "IT Solutions & Cybersecurity San Francisco | CyberStar IT",
     metaDescription:
-      "Cyberstar IT delivers phone systems, hardware, EDR, MDR, backup, and managed IT for San Francisco SMBs. Trusted IT reseller in the most competitive tech market in the US.",
+      "CyberStar IT delivers phone systems, hardware, EDR, MDR, backup, and managed IT for San Francisco SMBs. Trusted IT reseller in the most competitive tech market in the US.",
     heroHeadline: "IT Solutions for San Francisco Businesses",
     heroSubline:
-      "In the shadow of Silicon Valley, where SoMa startups and Financial District institutions alike demand enterprise-grade security — Cyberstar IT gives SF businesses the phone systems, cybersecurity, and IT infrastructure they need without enterprise complexity.",
+      "In the shadow of Silicon Valley, where SoMa startups and Financial District institutions alike demand enterprise-grade security — CyberStar IT gives SF businesses the phone systems, cybersecurity, and IT infrastructure they need without enterprise complexity.",
     localContext: [
       "San Francisco is the undisputed technology capital of the United States, home to the headquarters of Salesforce, Cloudflare, Block, and thousands of startups packed into the SoMa (South of Market) district and the Mission Bay innovation corridor. The Financial District and Embarcadero area house major banking, legal, and professional services firms, while the Presidio and Dogpatch neighborhoods have become home to growing biotech and AI companies. Down the peninsula, the city connects seamlessly to the Silicon Valley ecosystem in Palo Alto, Mountain View, and Menlo Park — meaning SF businesses compete directly with the most well-funded companies on the planet.",
       "Despite the concentration of technical talent from Stanford, UC Berkeley, and UCSF, small and medium businesses in San Francisco face some of the highest costs in the nation for IT staff, office space, and technology services. Hiring a full-time IT director in SF costs upward of $200,000 per year, and commercial rents in SoMa and the Financial District remain among the steepest in the country. Outsourced IT solutions and trusted VAR partnerships are significantly more cost-effective for the startups and scale-ups that make up the backbone of SF's business community.",

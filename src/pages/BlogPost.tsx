@@ -78,11 +78,11 @@ function BlogPost() {
       jobTitle: "Director of IT Solutions",
       url: "https://cyberstarit.com/about",
       image: "https://cyberstarit.com/authors/mike-chen.jpg",
-      worksFor: { "@type": "Organization", name: "Cyberstar IT" },
+      worksFor: { "@type": "Organization", name: "CyberStar IT" },
     },
     publisher: {
       "@type": "Organization",
-      name: "Cyberstar IT",
+      name: "CyberStar IT",
       url: "https://cyberstarit.com",
     },
     mainEntityOfPage: {
@@ -135,7 +135,7 @@ function BlogPost() {
   return (
     <>
       <Helmet>
-        <title>{post.title} | Cyberstar IT Blog</title>
+        <title>{post.title} | CyberStar IT Blog</title>
         <meta name="description" content={post.metaDescription} />
         <link rel="canonical" href={canonicalUrl} />
 
@@ -144,7 +144,7 @@ function BlogPost() {
         <meta property="og:description" content={post.metaDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="Cyberstar IT" />
+        <meta property="og:site_name" content="CyberStar IT" />
         <meta property="og:image" content="https://cyberstarit.com/og-default.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -244,7 +244,7 @@ function BlogPost() {
             </div>
             <div>
               <p className="font-semibold text-sm text-gray-900">Mike Chen</p>
-              <p className="text-xs text-gray-500">Director of IT Solutions at Cyberstar IT</p>
+              <p className="text-xs text-gray-500">Director of IT Solutions at CyberStar IT</p>
             </div>
           </div>
         </header>
@@ -307,9 +307,9 @@ function BlogPost() {
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">About the Author</p>
                 <p className="text-lg font-bold text-gray-900 mb-1">Mike Chen</p>
-                <p className="text-sm font-medium text-[var(--color-accent)] mb-3">Director of IT Solutions at Cyberstar IT</p>
+                <p className="text-sm font-medium text-[var(--color-accent)] mb-3">Director of IT Solutions at CyberStar IT</p>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Mike Chen leads IT solutions at Cyberstar IT, helping SMBs across the US build resilient technology infrastructure. With 12+ years in IT consulting and cybersecurity, Mike specializes in phone systems, endpoint security, and disaster recovery for businesses under 200 employees.
+                  Mike Chen leads IT solutions at CyberStar IT, helping SMBs across the US build resilient technology infrastructure. With 12+ years in IT consulting and cybersecurity, Mike specializes in phone systems, endpoint security, and disaster recovery for businesses under 200 employees.
                 </p>
               </div>
             </div>

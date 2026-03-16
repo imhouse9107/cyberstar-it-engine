@@ -56,8 +56,8 @@ function BlogIndex() {
   }
 
   const pageTitle = activeCluster
-    ? `${getClusterBySlug(activeCluster)?.title || "Blog"} | Cyberstar IT`
-    : "Blog | Cyberstar IT";
+    ? `${getClusterBySlug(activeCluster)?.title || "Blog"} | CyberStar IT`
+    : "Blog | CyberStar IT";
 
   return (
     <>
@@ -65,7 +65,7 @@ function BlogIndex() {
         <title>{pageTitle}</title>
         <meta
           name="description"
-          content="Practical IT guides, cybersecurity tips, and buying advice for small and medium businesses. Written by the Cyberstar IT team."
+          content="Practical IT guides, cybersecurity tips, and buying advice for small and medium businesses. Written by the CyberStar IT team."
         />
         <link rel="canonical" href="https://cyberstarit.com/blog" />
       </Helmet>
@@ -75,7 +75,7 @@ function BlogIndex() {
         <section className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-light)] text-white py-20">
           <div className="max-w-6xl mx-auto px-6">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-              Cyberstar IT Blog
+              CyberStar IT Blog
             </h1>
             <p className="text-white/80 text-lg max-w-2xl">
               Practical guides, honest comparisons, and cybersecurity advice for

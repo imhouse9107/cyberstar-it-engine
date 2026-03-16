@@ -225,6 +225,18 @@ function daysSince(date) {
   return Math.floor((new Date() - date) / (1000 * 60 * 60 * 24));
 }
 
+// ─── Content Freshness ──────────────────────────────────────────────────────
+
+function checkFreshness(posts) {
+  const sixMonthsAgo = new Date();
+  sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+
+  const stale = posts.filter(p => new Date(p.publishedDate) < sixMonthsAgo);
+  const noLinks = posts.filter(p => !p.content.includes('/blog/'));
+
+  return { stale, noLinks };
+}
+
 // ─── Content Health Audit ────────────────────────────────────────────────────
 
 function auditPosts(posts) {
@@ -374,7 +386,7 @@ function rankingProjections() {
 
 // ─── HTML Report Builder ─────────────────────────────────────────────────────
 
-function buildHtml(posts, audit, aiScore, clusters, projections) {
+function buildHtml(posts, audit, aiScore, clusters, projections, freshness) {
   const now = new Date();
   const dateStr = now.toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
 
@@ -589,6 +601,21 @@ function buildHtml(posts, audit, aiScore, clusters, projections) {
       </table>
     </div>
 
+    <!-- Content Freshness -->
+    <div style="padding:24px;">
+      <h2 style="font-size:18px;color:#111827;margin:0 0 16px 0;padding-bottom:8px;border-bottom:2px solid #0ea5e9;">Content Freshness</h2>
+      <table style="width:100%;border-collapse:collapse;font-size:13px;">
+        <tr style="border-bottom:1px solid #f3f4f6;">
+          <td style="padding:8px;color:#374151;">Stale Articles (6+ months)</td>
+          <td style="padding:8px;text-align:center;color:${freshness && freshness.stale.length > 5 ? '#ef4444' : '#10b981'};font-weight:600;">${freshness ? freshness.stale.length : 0}</td>
+        </tr>
+        <tr style="border-bottom:1px solid #f3f4f6;">
+          <td style="padding:8px;color:#374151;">Articles with No Internal Links</td>
+          <td style="padding:8px;text-align:center;color:${freshness && freshness.noLinks.length > 5 ? '#ef4444' : '#10b981'};font-weight:600;">${freshness ? freshness.noLinks.length : 0}</td>
+        </tr>
+      </table>
+    </div>
+
     <!-- Priority Actions -->
     <div style="padding:24px;">
       <h2 style="font-size:18px;color:#111827;margin:0 0 16px 0;padding-bottom:8px;border-bottom:2px solid #0ea5e9;">Priority Actions</h2>
@@ -637,7 +664,7 @@ function buildHtml(posts, audit, aiScore, clusters, projections) {
 
 // ─── Plain Text Report ───────────────────────────────────────────────────────
 
-function buildPlainText(posts, audit, aiScore, clusters, projections) {
+function buildPlainText(posts, audit, aiScore, clusters, projections, freshness) {
   const now = new Date();
   const dateStr = now.toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
   const totalVolume = KEYWORD_DB.reduce((s, k) => s + k.volume, 0);
@@ -688,6 +715,12 @@ ${"-".repeat(60)}
   Sources Cited:      ${aiScore.breakdown.sources}/${posts.length}
   Step-by-Step Guides: ${aiScore.breakdown.steps}/${posts.length}
 
+${"-".repeat(60)}
+CONTENT FRESHNESS
+${"-".repeat(60)}
+  Stale (6+ months): ${freshness ? freshness.stale.length : 0}
+  No internal links:  ${freshness ? freshness.noLinks.length : 0}
+
 ${"=".repeat(60)}
 End of Report
 ${"=".repeat(60)}
@@ -710,12 +743,15 @@ function main() {
   const aiScore = aiCitationScore(posts);
   console.log(`  AI citation score: ${aiScore.score}/100`);
 
+  const freshness = checkFreshness(posts);
+  console.log(`  Freshness: ${freshness.stale.length} stale, ${freshness.noLinks.length} without internal links`);
+
   const clusters = clusterSummary(posts);
   const projections = rankingProjections();
   console.log(`  GSC age: ${projections.gscAge} days`);
 
-  const html = buildHtml(posts, audit, aiScore, clusters, projections);
-  const txt = buildPlainText(posts, audit, aiScore, clusters, projections);
+  const html = buildHtml(posts, audit, aiScore, clusters, projections, freshness);
+  const txt = buildPlainText(posts, audit, aiScore, clusters, projections, freshness);
 
   fs.writeFileSync(OUT_HTML, html, "utf-8");
   fs.writeFileSync(OUT_TXT, txt, "utf-8");

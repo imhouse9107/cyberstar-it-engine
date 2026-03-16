@@ -601,7 +601,7 @@ The math is clear: for any business under 500 employees, MDR is dramatically mor
 2. **Start with what you need.** If endpoint and M365 monitoring covers your primary risks, do not pay for network monitoring you do not need yet.
 3. **Negotiate annual contracts.** The per-endpoint discount on annual commitments is significant.
 4. **Ask about MSP pricing.** If you work with an IT provider, they may have volume pricing through their MDR partnership that beats direct pricing.
-5. **Bundle with your IT provider.** Companies like Cyberstar IT bundle MDR with managed IT services, often at lower total cost than purchasing separately.
+5. **Bundle with your IT provider.** Companies like CyberStar IT bundle MDR with managed IT services, often at lower total cost than purchasing separately.
 6. **Compare apples to apples.** Ensure every quote covers the same scope (endpoints, servers, cloud, response depth) before comparing prices.
 
 For provider-specific comparisons, see our [Best MDR Providers for Small Business](/blog/best-mdr-providers-small-business) guide. To understand how MDR compares to other security investments, read [MDR vs SIEM](/blog/mdr-vs-siem) and [MDR vs MSSP](/blog/mdr-vs-mssp).
@@ -1569,7 +1569,7 @@ A DR plan is a living document. Schedule reviews:
 
 ### How long does it take to create a disaster recovery plan?
 
-For a small business with 20–100 employees, expect 2–4 weeks of part-time effort to create a comprehensive DR plan from scratch. This includes system inventory, RTO/RPO definition, backup strategy design, procedure documentation, and initial testing. An IT partner like Cyberstar IT can accelerate this process significantly.
+For a small business with 20–100 employees, expect 2–4 weeks of part-time effort to create a comprehensive DR plan from scratch. This includes system inventory, RTO/RPO definition, backup strategy design, procedure documentation, and initial testing. An IT partner like CyberStar IT can accelerate this process significantly.
 
 ### How much does disaster recovery cost for a small business?
 
@@ -1589,7 +1589,7 @@ At minimum: automated backup verification weekly, tabletop exercises quarterly, 
 
 ### Can my MSP create a disaster recovery plan for me?
 
-Yes. Many MSPs, including Cyberstar IT, include DR planning as part of their managed services. An MSP brings experience across many client environments and can design, implement, and test your DR plan as an ongoing service.
+Yes. Many MSPs, including CyberStar IT, include DR planning as part of their managed services. An MSP brings experience across many client environments and can design, implement, and test your DR plan as an ongoing service.
 
 ## Sources
 
@@ -3265,7 +3265,7 @@ Track patch compliance rate (target: ≥95%), mean time to patch for critical vu
 
 ### Should my MSP handle patch management?
 
-For most small businesses, yes. MSPs have the tools, expertise, and operational processes to manage patching efficiently. Confirm your MSP's patching SLAs, reporting cadence, and third-party application coverage. Cyberstar IT includes automated patch management in managed IT services.
+For most small businesses, yes. MSPs have the tools, expertise, and operational processes to manage patching efficiently. Confirm your MSP's patching SLAs, reporting cadence, and third-party application coverage. CyberStar IT includes automated patch management in managed IT services.
 
 ## Sources
 
@@ -3944,7 +3944,7 @@ Vulnerability management reduces your attack surface by identifying and remediat
 
 ### Should my MSP handle vulnerability management?
 
-For most SMBs, yes. Vulnerability management requires security expertise to prioritize findings and determine appropriate remediation. MSPs and managed security providers have this expertise and the tools to execute. Cyberstar IT integrates vulnerability assessment with managed IT services to provide continuous visibility into your security posture.
+For most SMBs, yes. Vulnerability management requires security expertise to prioritize findings and determine appropriate remediation. MSPs and managed security providers have this expertise and the tools to execute. CyberStar IT integrates vulnerability assessment with managed IT services to provide continuous visibility into your security posture.
 
 ## Sources
 

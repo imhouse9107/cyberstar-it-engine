@@ -5,7 +5,7 @@ function NotFound() {
   return (
     <>
       <Helmet>
-        <title>Page Not Found | Cyberstar IT</title>
+        <title>Page Not Found | CyberStar IT</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 

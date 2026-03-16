@@ -72,7 +72,7 @@ EDR is the right fit for your business if:
 
 **Your budget is constrained.** A 50-person company can deploy a strong EDR solution for $250–$600 per month. Equivalent XDR coverage would run $600–$1,500 per month. If you need to choose between great EDR and mediocre XDR, choose great EDR every time.
 
-**You have a managed security provider.** If you work with an MSSP or a security-focused IT partner like Cyberstar IT, their SOC analysts can manually correlate alerts from multiple tools — effectively providing XDR-like visibility using EDR as the foundation. This is the approach Cyberstar IT's 5-Star Cyber Shield methodology uses for businesses that are not yet ready for full XDR.
+**You have a managed security provider.** If you work with an MSSP or a security-focused IT partner like CyberStar IT, their SOC analysts can manually correlate alerts from multiple tools — effectively providing XDR-like visibility using EDR as the foundation. This is the approach CyberStar IT's 5-Star Cyber Shield methodology uses for businesses that are not yet ready for full XDR.
 
 ## When XDR Is Worth the Investment
 
@@ -171,7 +171,7 @@ Single-vendor XDR (all modules from one provider) is simpler to deploy and manag
 
 ### Can my MSP or IT partner manage XDR for me?
 
-Yes, and this is often the best approach for SMBs. Many managed IT providers, including Cyberstar IT, offer XDR management as part of their security services. This gives you enterprise-grade detection without needing in-house security analysts.
+Yes, and this is often the best approach for SMBs. Many managed IT providers, including CyberStar IT, offer XDR management as part of their security services. This gives you enterprise-grade detection without needing in-house security analysts.
 
 ### What is MDR, and how does it relate to EDR and XDR?
 
@@ -327,7 +327,7 @@ Intune handles device enrollment, policy enforcement, app management, and condit
 3. Update policies as new OS versions and threats emerge
 4. Conduct quarterly reviews of enrolled devices and access policies
 
-This phased approach aligns with Cyberstar IT's 5-Star Cyber Shield methodology, where endpoint protection (Star 3) builds on the foundation of identity management (Star 1) and network security (Star 2).
+This phased approach aligns with CyberStar IT's 5-Star Cyber Shield methodology, where endpoint protection (Star 3) builds on the foundation of identity management (Star 1) and network security (Star 2).
 
 ## Common Pitfalls to Avoid
 
@@ -506,7 +506,7 @@ Security should be embedded in your development and deployment pipeline. The bes
 
 ### For Microsoft Azure SMBs
 
-If you run workloads on Azure, Microsoft Defender for Cloud is the natural starting point. It integrates natively with Azure services, provides CSPM for free (Foundational tier), and the Defender for Servers Plan 2 ($15/server/month) includes full EDR capabilities powered by Microsoft Defender for Endpoint. This aligns well with Cyberstar IT's 5-Star Cyber Shield methodology, which emphasizes integrated security stacks that work together rather than bolted-on point solutions.
+If you run workloads on Azure, Microsoft Defender for Cloud is the natural starting point. It integrates natively with Azure services, provides CSPM for free (Foundational tier), and the Defender for Servers Plan 2 ($15/server/month) includes full EDR capabilities powered by Microsoft Defender for Endpoint. This aligns well with CyberStar IT's 5-Star Cyber Shield methodology, which emphasizes integrated security stacks that work together rather than bolted-on point solutions.
 
 ### For AWS SMBs
 
@@ -597,7 +597,7 @@ CWPP (Cloud Workload Protection Platform) protects what runs inside your cloud �
 
 ### Can my managed IT provider handle cloud workload security?
 
-Yes. Many managed IT providers, including Cyberstar IT, offer cloud security management as part of their services. This typically includes agent deployment, monitoring, alert investigation, and remediation — giving you enterprise-grade cloud protection without in-house cloud security expertise.
+Yes. Many managed IT providers, including CyberStar IT, offer cloud security management as part of their services. This typically includes agent deployment, monitoring, alert investigation, and remediation — giving you enterprise-grade cloud protection without in-house cloud security expertise.
 
 ### Does cloud workload EDR slow down my applications?
 
@@ -764,7 +764,7 @@ You do not need to implement everything at once. A phased approach spreads cost 
 - **Quarter 3**: Backup audit and upgrade, vulnerability scanning, patch management review
 - **Quarter 4**: MDR or SIEM evaluation, penetration test, cyber insurance review
 
-This is the approach Cyberstar IT's 5-Star Cyber Shield methodology uses — building each security layer on a solid foundation rather than attempting everything simultaneously.
+This is the approach CyberStar IT's 5-Star Cyber Shield methodology uses — building each security layer on a solid foundation rather than attempting everything simultaneously.
 
 ### Step 5: Get Executive Buy-In
 
@@ -1046,7 +1046,7 @@ Compare this to the average cost of a credential-based breach ($4.5 million acco
 
 **"I already use my browser's built-in password manager."** Browser password managers lack enterprise features: no shared vaults, no admin controls, no offboarding workflow, no compliance reporting. They also do not work cross-browser. A dedicated business password manager is a different category of tool.
 
-**"We are too small to be a target."** Small businesses account for 43% of cyberattack victims. Attackers use automated tools that do not care about your company size — they target weak credentials indiscriminately. A strong password policy is foundational to Cyberstar IT's 5-Star Cyber Shield methodology for exactly this reason.
+**"We are too small to be a target."** Small businesses account for 43% of cyberattack victims. Attackers use automated tools that do not care about your company size — they target weak credentials indiscriminately. A strong password policy is foundational to CyberStar IT's 5-Star Cyber Shield methodology for exactly this reason.
 
 ## Frequently Asked Questions
 
@@ -1270,7 +1270,7 @@ Both NAS devices and servers require security hardening. Out of the box, neither
 - Use Group Policy to enforce security baselines
 - Monitor with a SIEM or managed security service
 
-These security controls align with Cyberstar IT's 5-Star Cyber Shield methodology — specifically the infrastructure hardening and data protection layers that protect business-critical storage.
+These security controls align with CyberStar IT's 5-Star Cyber Shield methodology — specifically the infrastructure hardening and data protection layers that protect business-critical storage.
 
 ## Frequently Asked Questions
 
@@ -1459,7 +1459,7 @@ Ensure the printer's web management interface is only accessible from your inter
 
 Include printers in your network monitoring and SIEM. Watch for unusual patterns: printing at odd hours, large print jobs to unusual devices, failed authentication attempts, or configuration changes.
 
-This layered approach to printer security is a natural extension of Cyberstar IT's 5-Star Cyber Shield methodology — treating every network-connected device as a potential attack vector and applying defense-in-depth principles regardless of the device type.
+This layered approach to printer security is a natural extension of CyberStar IT's 5-Star Cyber Shield methodology — treating every network-connected device as a potential attack vector and applying defense-in-depth principles regardless of the device type.
 
 ## Cost of Printer-Related Security Incidents
 
@@ -1616,7 +1616,7 @@ The clean distinction between VARs and cloud resellers has been dissolving for y
 
 **MSPs overlap with both.** Managed Service Providers (MSPs) often function as both VAR and cloud reseller, bundled with ongoing IT management. An MSP might sell you laptops (VAR function), migrate you to Microsoft 365 (CSP function), and manage everything on a monthly contract (MSP function).
 
-**Cyberstar IT's model**, for example, combines VAR capabilities (hardware procurement, network infrastructure, phone systems) with cloud reseller services (Microsoft 365 management, cloud security) and managed security services — a hybrid approach that reflects how modern SMBs actually buy technology.
+**CyberStar IT's model**, for example, combines VAR capabilities (hardware procurement, network infrastructure, phone systems) with cloud reseller services (Microsoft 365 management, cloud security) and managed security services — a hybrid approach that reflects how modern SMBs actually buy technology.
 
 ## When to Work with a VAR
 
@@ -1865,7 +1865,7 @@ According to a 2025 CompTIA survey, 41% of SMBs that switched IT vendors cited "
 - Data handling: clear terms on how the vendor accesses, stores, and protects your data
 - Background checks: vendor employees accessing your systems must pass background checks
 
-These security SLA requirements align with Cyberstar IT's 5-Star Cyber Shield methodology, which treats vendor security as a critical component of your overall security posture.
+These security SLA requirements align with CyberStar IT's 5-Star Cyber Shield methodology, which treats vendor security as a critical component of your overall security posture.
 
 ## SLA Penalties: Making the Agreement Enforceable
 
@@ -2212,7 +2212,7 @@ Beyond specific framework requirements, these security controls should be implem
 - **Regular audits** — Review user access, call recording access, and system configuration quarterly
 - **Incident response** — Include VoIP in your incident response plan
 
-These controls form the communications security layer of Cyberstar IT's 5-Star Cyber Shield methodology, ensuring that voice infrastructure receives the same security attention as data systems.
+These controls form the communications security layer of CyberStar IT's 5-Star Cyber Shield methodology, ensuring that voice infrastructure receives the same security attention as data systems.
 
 ## Cost of VoIP Compliance
 

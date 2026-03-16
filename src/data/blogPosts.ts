@@ -10,6 +10,7 @@ export interface BlogPost {
   metaDescription: string;
   primaryKeyword: string;
   cluster: string;
+  buyingStage?: 'awareness' | 'consideration' | 'decision' | 'retention';
   publishedDate: string;
   content: string;
 }
@@ -74,7 +75,7 @@ The trade-off: Teams Phone's call routing and auto-attendant features are less m
 
 3CX offers a free tier for up to 10 users (self-hosted), making it the most affordable entry point on this list. Even the paid plans — starting at roughly $175/year for the entire system, not per user — undercut competitors dramatically. The platform supports both on-premise and cloud deployment, giving you flexibility that pure-cloud providers cannot match.
 
-The trade-off: Self-hosting means you manage updates, security patches, and uptime. If your team lacks IT expertise, consider a [hosted PBX](/blog/hosted-pbx-vs-on-premise-phone-system) option or work with a partner like Cyberstar IT to manage the deployment.
+The trade-off: Self-hosting means you manage updates, security patches, and uptime. If your team lacks IT expertise, consider a [hosted PBX](/blog/hosted-pbx-vs-on-premise-phone-system) option or work with a partner like CyberStar IT to manage the deployment.
 
 ### 4. Zoom Phone — Best for Video-First Teams
 
@@ -393,7 +394,7 @@ On-premise often costs more upfront but less per month. It typically breaks even
 - **Right-size your plan**: Not every user needs an advanced plan. Many providers allow mixing tiers.
 - **Use softphones where appropriate**: Skip desk phones for mobile workers. See our [remote team phone guide](/blog/business-phone-system-for-remote-teams).
 - **Bundle services**: Providers like RingCentral and Nextiva offer discounts when you bundle phone, video, and messaging.
-- **Work with a partner**: Value-added resellers like Cyberstar IT often have access to partner pricing and can handle setup for less than going direct.
+- **Work with a partner**: Value-added resellers like CyberStar IT often have access to partner pricing and can handle setup for less than going direct.
 
 ## Cost Comparison: VoIP vs Traditional Landline (5-Year View)
 
@@ -440,7 +441,7 @@ Most major VoIP providers port numbers for free. Some charge $10–$25 per numbe
 
 ### Should I use a VAR or go direct to a vendor?
 
-For businesses under 50 users, going direct is fine if your needs are simple. For complex deployments — multi-location, call center features, compliance requirements — a value-added reseller like Cyberstar IT provides design, implementation, and ongoing support that often reduces total cost of ownership.
+For businesses under 50 users, going direct is fine if your needs are simple. For complex deployments — multi-location, call center features, compliance requirements — a value-added reseller like CyberStar IT provides design, implementation, and ongoing support that often reduces total cost of ownership.
 
 ### How often do I need to replace phone system hardware?
 
@@ -613,7 +614,7 @@ This is why choosing established providers matters. RingCentral, Zoom, Microsoft
 
 ### Should I use a VoIP broker or go direct?
 
-Going direct is fine for simple deployments. For complex needs — multi-location, compliance requirements, advanced call routing — a technology partner like Cyberstar IT can evaluate your specific needs, negotiate pricing, and manage implementation.
+Going direct is fine for simple deployments. For complex needs — multi-location, compliance requirements, advanced call routing — a technology partner like CyberStar IT can evaluate your specific needs, negotiate pricing, and manage implementation.
 
 ## Sources
 
@@ -1001,7 +1002,7 @@ For the complete process, see our [number porting guide](/blog/business-phone-nu
 
 ### Can I set up a business phone system myself, or do I need professional help?
 
-For cloud systems with under 20 users, self-service setup is realistic. Providers like Zoom Phone and RingCentral have intuitive admin portals with setup wizards. For larger deployments or complex call flows, working with a partner like Cyberstar IT saves time and prevents costly misconfigurations.
+For cloud systems with under 20 users, self-service setup is realistic. Providers like Zoom Phone and RingCentral have intuitive admin portals with setup wizards. For larger deployments or complex call flows, working with a partner like CyberStar IT saves time and prevents costly misconfigurations.
 
 ### Do I need an IT person to manage a cloud phone system?
 
@@ -1126,7 +1127,7 @@ These prices are for the 3CX software license. You also need:
 ## Who Should Choose 3CX?
 
 3CX is the right choice if:
-- You have IT staff (or a partner like Cyberstar IT) who can manage the system
+- You have IT staff (or a partner like CyberStar IT) who can manage the system
 - Cost is a primary concern and you want to save 50-80% on communications
 - You want deployment flexibility (on-premise, cloud, or hybrid)
 - You need live chat integration for customer service
@@ -1681,7 +1682,7 @@ No, if you are porting existing numbers -- the transition is invisible to caller
 
 ### Can I switch providers without an IT team?
 
-Yes, for cloud-to-cloud switches with under 25 users. Providers offer onboarding assistance. For complex migrations, a technology partner like Cyberstar IT handles everything.
+Yes, for cloud-to-cloud switches with under 25 users. Providers offer onboarding assistance. For complex migrations, a technology partner like CyberStar IT handles everything.
 
 ### What does switching cost?
 

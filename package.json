@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "postbuild": "node scripts/prerender.cjs",
+    "postbuild": "node scripts/generate-sitemap.cjs && node scripts/prerender.cjs",
+    "generate-sitemap": "node scripts/generate-sitemap.cjs",
+    "generate-links": "node scripts/generate-internal-links.cjs",
+    "classify-articles": "node scripts/classify-articles.cjs",
+    "lint": "tsc --noEmit",
+    "test": "echo 'No test framework configured yet'",
     "preview": "vite preview"
   },
   "dependencies": {

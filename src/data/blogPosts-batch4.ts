@@ -148,7 +148,7 @@ Most SMBs reach a point where managing cybersecurity internally is not sustainab
 - Clients or partners are asking about your security posture
 - You need to pass a compliance audit
 
-A managed security service provider (MSSP) or a value-added reseller like Cyberstar IT can assess your current posture, recommend the right tools, and help you implement them — without the cost of hiring a full-time CISO.
+A managed security service provider (MSSP) or a value-added reseller like CyberStar IT can assess your current posture, recommend the right tools, and help you implement them — without the cost of hiring a full-time CISO.
 
 ## Frequently Asked Questions
 
@@ -555,7 +555,7 @@ This checklist is a self-assessment starting point. For a thorough evaluation, c
 - **Penetration test** — Ethical hackers testing your defenses ($5,000-$20,000)
 - **Full security assessment** — Comprehensive review of people, process, and technology ($10,000-$30,000)
 
-A value-added reseller like Cyberstar IT can help you interpret your results and build a remediation roadmap that fits your budget. See our [cybersecurity cost guide](/blog/how-much-does-cybersecurity-cost-small-business) for pricing details.
+A value-added reseller like CyberStar IT can help you interpret your results and build a remediation roadmap that fits your budget. See our [cybersecurity cost guide](/blog/how-much-does-cybersecurity-cost-small-business) for pricing details.
 
 ## Frequently Asked Questions
 
@@ -1054,7 +1054,7 @@ Focus on the controls that apply everywhere:
 
 ### Step 5: Get Expert Help
 
-Compliance is not a DIY project for most SMBs. Work with a compliance-focused partner who understands your framework. A value-added reseller like Cyberstar IT can help you select tools, implement controls, and prepare for audits — saving you time and reducing the risk of doing it wrong.
+Compliance is not a DIY project for most SMBs. Work with a compliance-focused partner who understands your framework. A value-added reseller like CyberStar IT can help you select tools, implement controls, and prepare for audits — saving you time and reducing the risk of doing it wrong.
 
 ## Frequently Asked Questions
 
@@ -3220,7 +3220,7 @@ The IT channel has been converging for years. Today:
 - **Many VARs now offer managed services** — They realized recurring revenue is more sustainable than transactional sales
 - **Clients want one partner** — Managing separate vendors for procurement and support creates coordination headaches
 
-The result is a growing category of hybrid partners — companies that combine VAR procurement expertise with MSP operational management. Cyberstar IT is an example of this model: we source the right technology and manage it on an ongoing basis.
+The result is a growing category of hybrid partners — companies that combine VAR procurement expertise with MSP operational management. CyberStar IT is an example of this model: we source the right technology and manage it on an ongoing basis.
 
 ## How to Choose Between Them (Or Both)
 

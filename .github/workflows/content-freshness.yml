@@ -1,0 +1,90 @@
+name: Content Freshness Check
+
+on:
+  schedule:
+    - cron: '0 9 1 * *'  # 9am UTC on the 1st of each month
+  workflow_dispatch:
+
+jobs:
+  freshness-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run freshness check
+        run: |
+          node -e "
+          const fs = require('fs');
+
+          const BATCH_FILES = [
+            'src/data/blogPosts.ts',
+            'src/data/blogPosts-batch2.ts',
+            'src/data/blogPosts-batch3.ts',
+            'src/data/blogPosts-batch4.ts',
+            'src/data/blogPosts-batch5.ts',
+            'src/data/blogPosts-batch6.ts',
+          ];
+
+          const allArticles = [];
+          for (const file of BATCH_FILES) {
+            try {
+              const source = fs.readFileSync(file, 'utf8');
+              const slugs = [...source.matchAll(/slug:\s*[\"']([^\"']+)[\"']/g)].map(m => m[1]);
+              const titles = [...source.matchAll(/title:\s*[\"']([^\"']*?)[\"']/g)].map(m => m[1]);
+              const dates = [...source.matchAll(/publishedDate:\s*[\"']([^\"']+)[\"']/g)].map(m => m[1]);
+              const contents = [...source.matchAll(/content:\s*\\\`([\\s\\S]*?)\\\`/g)].map(m => m[1]);
+
+              for (let i = 0; i < slugs.length; i++) {
+                allArticles.push({
+                  slug: slugs[i],
+                  title: titles[i] || '',
+                  date: dates[i] || '2026-03-08',
+                  hasInternalLinks: (contents[i] || '').includes('/blog/'),
+                });
+              }
+            } catch(e) { /* skip missing files */ }
+          }
+
+          const now = new Date();
+          const sixMonthsAgo = new Date(now.getFullYear(), now.getMonth() - 6, now.getDate());
+          const stale = allArticles.filter(a => new Date(a.date) < sixMonthsAgo);
+          const noLinks = allArticles.filter(a => !a.hasInternalLinks);
+
+          let body = '## Content Freshness Report - Cyberstar IT\\n\\n';
+          body += 'Generated: ' + now.toISOString().split('T')[0] + '\\n\\n';
+
+          if (stale.length > 0) {
+            body += '### Stale Articles (6+ months old)\\n\\n';
+            stale.forEach(s => { body += '- [ ] **' + s.title + '** (\\\`' + s.slug + '\\\`) — published ' + s.date + '\\n'; });
+            body += '\\n';
+          } else {
+            body += '### No stale articles found\\n\\n';
+          }
+
+          if (noLinks.length > 0) {
+            body += '### Articles with No Internal Links\\n\\n';
+            noLinks.forEach(a => { body += '- [ ] **' + a.title + '** (\\\`' + a.slug + '\\\`)\\n'; });
+            body += '\\n';
+          }
+
+          body += '### Summary\\n';
+          body += '- Total articles: ' + allArticles.length + '\\n';
+          body += '- Stale (6+ months): ' + stale.length + '\\n';
+          body += '- No internal links: ' + noLinks.length + '\\n';
+
+          fs.writeFileSync('/tmp/freshness-body.md', body);
+          console.log(body);
+          "
+
+      - name: Create GitHub Issue
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Content Freshness Report - ${{ github.event.repository.name }}"
+          content-filepath: /tmp/freshness-body.md
+          labels: content,seo,automated

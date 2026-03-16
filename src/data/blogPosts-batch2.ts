@@ -8,7 +8,7 @@ export const batch2Posts: BlogPost[] = [
     primaryKeyword: "best business laptops 2026",
     cluster: "Business Hardware",
     publishedDate: "2025-12-01",
-    content: `> "The wrong laptop costs your business more in lost productivity than the price difference between a consumer and business model ever would." — Cyberstar IT Engineering Team
+    content: `> "The wrong laptop costs your business more in lost productivity than the price difference between a consumer and business model ever would." — CyberStar IT Engineering Team
 
 Choosing the right laptops for your team is one of the most impactful IT decisions a small business can make. The average employee spends 6-8 hours a day on their laptop, and every freeze, slow boot, or dead battery translates directly into lost revenue.
 
@@ -142,7 +142,7 @@ Look for 3-year warranties with next-business-day onsite service. The cost diffe
 
 ## How to Buy: Direct vs. Reseller vs. Refurbished
 
-For SMBs buying 5+ units, working with a [value-added IT reseller like Cyberstar IT](https://cyberstarit.com) typically saves 10-20% over direct MSRP while adding configuration, imaging, and deployment services. Read our guide on [refurbished vs new business computers](/blog/refurbished-vs-new-business-computers) if budget is tight.
+For SMBs buying 5+ units, working with a [value-added IT reseller like CyberStar IT](https://cyberstarit.com) typically saves 10-20% over direct MSRP while adding configuration, imaging, and deployment services. Read our guide on [refurbished vs new business computers](/blog/refurbished-vs-new-business-computers) if budget is tight.
 
 ## Frequently Asked Questions
 
@@ -183,7 +183,7 @@ Yes. The 15-30% price premium pays for itself through longer lifespan, better se
     primaryKeyword: "it hardware for small business",
     cluster: "Business Hardware",
     publishedDate: "2025-12-04",
-    content: `> "Most small businesses either over-invest in hardware they do not need or under-invest in hardware that directly impacts revenue. The goal is matching your spend to your actual requirements." — Cyberstar IT Engineering Team
+    content: `> "Most small businesses either over-invest in hardware they do not need or under-invest in hardware that directly impacts revenue. The goal is matching your spend to your actual requirements." — CyberStar IT Engineering Team
 
 If you are running a small business with 5 to 200 employees, your IT hardware decisions directly impact productivity, security, and your bottom line. The challenge is figuring out what you actually need versus what vendors want to sell you.
 
@@ -382,7 +382,7 @@ At minimum: a business laptop, external monitor, docking station, headset, and w
     primaryKeyword: "refurbished vs new business computers",
     cluster: "Business Hardware",
     publishedDate: "2025-12-08",
-    content: `> "Refurbished does not mean inferior. A properly certified refurbished business laptop can deliver 80% of the performance at 50% of the cost — but only if you buy from the right source." — Cyberstar IT Engineering Team
+    content: `> "Refurbished does not mean inferior. A properly certified refurbished business laptop can deliver 80% of the performance at 50% of the cost — but only if you buy from the right source." — CyberStar IT Engineering Team
 
 Buying refurbished business computers can be a smart financial move or a costly mistake. The difference comes down to sourcing, certification level, and matching the right equipment to the right use case.
 
@@ -466,7 +466,7 @@ The mixed approach is often the smartest strategy. New machines for power users 
    - IT asset disposition (ITAD) companies — Often sell enterprise off-lease equipment in bulk
 
 3. **Value-Added Resellers**
-   - Working with a [reseller like Cyberstar IT](https://cyberstarit.com) gives you access to both new and certified refurbished inventory with professional configuration and support.
+   - Working with a [reseller like CyberStar IT](https://cyberstarit.com) gives you access to both new and certified refurbished inventory with professional configuration and support.
 
 ### Red Flags When Buying Refurbished
 
@@ -543,7 +543,7 @@ Yes, as long as you wipe and reimage every machine before deployment. Never use 
     primaryKeyword: "small business server setup",
     cluster: "Business Hardware",
     publishedDate: "2025-12-10",
-    content: `> "The server question is not 'cloud or on-premise' anymore. It is 'what belongs where' — and for most small businesses, the answer is a thoughtful hybrid approach." — Cyberstar IT Engineering Team
+    content: `> "The server question is not 'cloud or on-premise' anymore. It is 'what belongs where' — and for most small businesses, the answer is a thoughtful hybrid approach." — CyberStar IT Engineering Team
 
 The server infrastructure decision is one of the most consequential technology choices a small business makes. Get it right, and your team has fast, reliable, secure access to everything they need. Get it wrong, and you face downtime, data loss, or runaway monthly costs.
 
@@ -754,7 +754,7 @@ At minimum, your server should be in a locked room with restricted access, clima
     primaryKeyword: "network equipment small business",
     cluster: "Business Hardware",
     publishedDate: "2025-12-12",
-    content: `> "Your network is the foundation of your entire IT infrastructure. Every slow application, dropped video call, and failed file transfer traces back to networking decisions." — Cyberstar IT Engineering Team
+    content: `> "Your network is the foundation of your entire IT infrastructure. Every slow application, dropped video call, and failed file transfer traces back to networking decisions." — CyberStar IT Engineering Team
 
 Network equipment is the least glamorous but most critical IT investment a small business makes. A $50,000 investment in new laptops is wasted if they are connected to a $79 consumer router from 2019.
 
@@ -954,7 +954,7 @@ Plan for a 5-7 year lifecycle for routers, switches, and access points. Replace 
     primaryKeyword: "how to set up business wifi",
     cluster: "Business Hardware",
     publishedDate: "2025-12-17",
-    content: `> "The number one IT complaint in every office survey is WiFi. Not because WiFi is inherently unreliable, but because most businesses set it up like a home network and hope for the best." — Cyberstar IT Engineering Team
+    content: `> "The number one IT complaint in every office survey is WiFi. Not because WiFi is inherently unreliable, but because most businesses set it up like a home network and hope for the best." — CyberStar IT Engineering Team
 
 Unreliable WiFi costs your business real money. Every dropped video call, every file that takes five minutes to upload, every "can you hear me now" moment during a client meeting — it all traces back to WiFi infrastructure decisions.
 
@@ -1200,7 +1200,7 @@ Deploy APs on each floor, connected via ethernet runs to a central switch (or sw
     primaryKeyword: "business workstation vs consumer pc",
     cluster: "Business Hardware",
     publishedDate: "2025-12-18",
-    content: `> "A business workstation is not just a faster consumer PC. It is a fundamentally different product designed for different requirements — reliability, manageability, and total cost of ownership." — Cyberstar IT Engineering Team
+    content: `> "A business workstation is not just a faster consumer PC. It is a fundamentally different product designed for different requirements — reliability, manageability, and total cost of ownership." — CyberStar IT Engineering Team
 
 When it is time to buy computers for your team, the temptation to save money with consumer-grade machines is real. A Dell Inspiron looks a lot like a Dell Latitude on the spec sheet, and it costs $300 less. So why would you pay more?
 
@@ -1366,7 +1366,7 @@ Chromebooks can be business-appropriate for specific roles (reception, basic dat
     primaryKeyword: "it hardware lifecycle management",
     cluster: "Business Hardware",
     publishedDate: "2025-12-23",
-    content: `> "The most expensive hardware in your company is not the newest — it is the oldest. Aging equipment costs more in downtime, security risk, and lost productivity than its replacement ever would." — Cyberstar IT Engineering Team
+    content: `> "The most expensive hardware in your company is not the newest — it is the oldest. Aging equipment costs more in downtime, security risk, and lost productivity than its replacement ever would." — CyberStar IT Engineering Team
 
 Every piece of IT hardware has a lifespan. Replacing it too early wastes money. Replacing it too late wastes even more money through downtime, security vulnerabilities, and frustrated employees. IT hardware lifecycle management is the discipline of getting the timing right.
 
@@ -1590,7 +1590,7 @@ Companies with proactive lifecycle management programs report 23% less unplanned
     primaryKeyword: "it hardware budget small business",
     cluster: "Business Hardware",
     publishedDate: "2025-12-24",
-    content: `> "IT hardware budgeting is not about spending less. It is about spending right — allocating dollars where they create the most productivity and security per dollar invested." — Cyberstar IT Engineering Team
+    content: `> "IT hardware budgeting is not about spending less. It is about spending right — allocating dollars where they create the most productivity and security per dollar invested." — CyberStar IT Engineering Team
 
 Most small business owners either dread IT hardware budgeting or skip it entirely, buying equipment reactively when something breaks. Both approaches lead to overspending, security gaps, and frustrated employees.
 
@@ -1742,7 +1742,7 @@ Pick one manufacturer (Lenovo, Dell, or HP) and standardize. Benefits:
 
 ### Strategy 5: Negotiate with a VAR
 
-A value-added reseller like [Cyberstar IT](https://cyberstarit.com) can negotiate pricing that is 10-20% below direct MSRP, especially for larger orders. VARs also provide configuration, imaging, and deployment services that save your IT team significant time.
+A value-added reseller like [CyberStar IT](https://cyberstarit.com) can negotiate pricing that is 10-20% below direct MSRP, especially for larger orders. VARs also provide configuration, imaging, and deployment services that save your IT team significant time.
 
 ### Strategy 6: Time Your Purchases
 
@@ -1815,7 +1815,7 @@ Remote employees need the same endpoint hardware plus: a quality external monito
     primaryKeyword: "monitor setup for productivity",
     cluster: "Business Hardware",
     publishedDate: "2025-12-29",
-    content: `> "Adding a second monitor is the single highest-ROI productivity investment you can make for a desk worker. The research is unambiguous — dual monitors increase productivity by 20-30%." — Cyberstar IT Engineering Team
+    content: `> "Adding a second monitor is the single highest-ROI productivity investment you can make for a desk worker. The research is unambiguous — dual monitors increase productivity by 20-30%." — CyberStar IT Engineering Team
 
 Your employees spend 8+ hours a day looking at their screens. The monitor setup you provide directly impacts how fast they work, how many errors they make, and how their neck and eyes feel at the end of the day.
 
@@ -2004,7 +2004,7 @@ When rolling out monitor upgrades across the company:
 5. **Order 10% spare inventory.** Monitors fail, get damaged, and new hires need them.
 6. **Cable management matters.** Provide cable clips or trays. Messy cables invite accidents.
 
-Work with a [value-added reseller like Cyberstar IT](https://cyberstarit.com) to handle bulk purchasing, configuration, and delivery.
+Work with a [value-added reseller like CyberStar IT](https://cyberstarit.com) to handle bulk purchasing, configuration, and delivery.
 
 ## Frequently Asked Questions
 
@@ -3092,7 +3092,7 @@ EDR agents typically generate 5–15 MB of telemetry data per endpoint per day d
 
 ### Should I hire a consultant for EDR implementation?
 
-For businesses under 25 endpoints with basic IT capability, self-deployment is feasible using this guide. For larger deployments, multiple office locations, or complex environments, working with a partner like Cyberstar IT reduces risk and accelerates the timeline. The cost of a consultant ($2,000–$5,000 for a typical SMB deployment) is offset by faster time-to-protection and fewer false positive issues.
+For businesses under 25 endpoints with basic IT capability, self-deployment is feasible using this guide. For larger deployments, multiple office locations, or complex environments, working with a partner like CyberStar IT reduces risk and accelerates the timeline. The cost of a consultant ($2,000–$5,000 for a typical SMB deployment) is offset by faster time-to-protection and fewer false positive issues.
 
 ## Sources
 

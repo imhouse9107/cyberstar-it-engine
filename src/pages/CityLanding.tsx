@@ -39,7 +39,7 @@ function CityLanding() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Cyberstar IT",
+    name: "CyberStar IT",
     url: `https://cyberstarit.com/${city.slug}`,
     description: city.metaDescription,
     address: {
@@ -145,7 +145,7 @@ function CityLanding() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
           <Link to="/" className="text-xl font-bold text-gray-900">
-            Cyberstar IT
+            CyberStar IT
           </Link>
           <div className="hidden md:flex items-center gap-8">
             <Link
@@ -298,7 +298,7 @@ function CityLanding() {
       <section id="solutions" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            How Cyberstar IT Helps {city.city} Businesses
+            How CyberStar IT Helps {city.city} Businesses
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
             We source, deploy, and support the technology your business
@@ -440,7 +440,7 @@ function CityLanding() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
               <span className="text-white font-bold text-lg">
-                Cyberstar IT
+                CyberStar IT
               </span>
               <p className="text-sm mt-1">
                 Trusted IT & cybersecurity solutions for US businesses.
@@ -462,7 +462,7 @@ function CityLanding() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-xs">
-            &copy; {new Date().getFullYear()} Cyberstar IT. All rights
+            &copy; {new Date().getFullYear()} CyberStar IT. All rights
             reserved.
           </div>
         </div>
