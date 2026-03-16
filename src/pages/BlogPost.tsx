@@ -70,6 +70,7 @@ function BlogPost() {
     "@type": "Article",
     headline: post.title,
     description: post.metaDescription,
+    image: "https://cyberstarit.com/og-default.png",
     datePublished: post.publishedDate,
     dateModified: post.publishedDate,
     author: {

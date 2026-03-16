@@ -16,6 +16,8 @@ const BLOG_FILES = [
   "blogPosts-batch2.ts",
   "blogPosts-batch3.ts",
   "blogPosts-batch4.ts",
+  "blogPosts-batch5.ts",
+  "blogPosts-batch6.ts",
 ];
 
 // Extract slugs via regex from all blog post files
