@@ -1,29 +1,46 @@
-# Cyberstar IT
-> Value-added IT reseller helping US small businesses build resilient technology infrastructure.
+# CyberStar IT
+> Vendor-agnostic IT reseller and cybersecurity consultancy for US small businesses (up to 200 employees).
 
 ## About
-Cyberstar IT is a vendor-agnostic IT reseller and consultancy serving small to medium businesses (up to 200 employees) across the United States. We help SMBs select, deploy, and manage business technology — from phone systems to cybersecurity solutions.
+CyberStar IT is a vendor-agnostic IT reseller and consultancy serving small to medium businesses across the United States. We help SMBs select, deploy, and manage business technology — from cloud phone systems to layered cybersecurity — with no long-term contracts and no vendor bias. We have helped US businesses save over $2M in redundant tool spending by auditing their existing IT stacks and consolidating to what actually works.
 
-## Key Topics
-- Business Phone Systems & VoIP
-- IT Hardware & Infrastructure
-- Endpoint Detection & Response (EDR)
-- Managed Detection & Response (MDR)
-- Backup & Disaster Recovery
-- Patch Management
-- Cybersecurity for Small Business
-- IT Buying Guides & Comparisons
+## Branded Methodology
+**The 5-Star Cyber Shield** — CyberStar IT's proprietary framework for building SMB security posture across five layers:
+1. **Protect** — endpoint protection, firewall, access control
+2. **Detect** — EDR, MDR, continuous monitoring
+3. **Recover** — cloud backup, disaster recovery, RTO/RPO planning
+4. **Comply** — HIPAA, PCI-DSS, SOC 2 alignment for regulated industries
+5. **Train** — security awareness training, phishing simulation, policy enforcement
 
 ## Services
-- Phone Systems: Cloud VoIP, UCaaS, hosted PBX solutions
-- Hardware: Business laptops, servers, networking equipment
-- Cybersecurity: EDR, MDR, backup, patch management
-- IT Consulting: Vendor-agnostic technology assessments
+- **Phone Systems & VoIP**: Cloud PBX, UCaaS, hosted VoIP, auto-attendants, mobile extensions — brands include RingCentral, 8x8, Vonage, Nextiva
+- **Hardware & Infrastructure**: Business laptops, servers, networking equipment, switches, firewalls, access points — lifecycle management and tech refresh cycles
+- **Endpoint Security (EDR)**: Next-generation antivirus and endpoint detection and response, replacing legacy AV with AI-driven threat prevention
+- **Managed Detection & Response (MDR)**: 24/7 threat monitoring and incident response for businesses without an internal security team
+- **Cloud Backup & Disaster Recovery**: Automated offsite backup, ransomware-proof recovery, tested restore procedures
+- **Patch Management**: Automated patch deployment across all endpoints, servers, and network devices
+- **IT Assessments**: Free security scorecard and technology stack audit — identifies redundant tools and coverage gaps
+
+## Target Customer
+US small businesses with 10-200 employees across: Nashville TN, Charlotte NC, Raleigh NC, Tampa FL, Orlando FL, Phoenix AZ, Denver CO, Columbus OH — and nationwide. Industries served include professional services, healthcare-adjacent businesses, financial services, and retail.
+
+## Competitive Differentiator
+CyberStar IT is vendor-agnostic — we do not receive commissions from any single vendor. Our free security scorecard benchmarks a business's current IT stack against the 5-Star Cyber Shield and shows exactly which tools are redundant, which gaps exist, and what the fix costs.
+
+## Key Stats
+- 100+ articles published on IT solutions for US SMBs
+- Free security scorecard: 30 seconds, no sales call required
+- Service areas: 8 major US metro markets
+
+## Author
+**Mike Chen**, Director of IT Solutions at CyberStar IT. 12+ years in IT consulting and cybersecurity for SMBs across the US. Specialises in phone systems, endpoint security, and disaster recovery for businesses under 200 employees.
 
 ## Contact
 - Website: https://cyberstarit.com
-- Location: United States
+- Email: info@cyberstarit.com
+- Service Areas: Nashville TN, Charlotte NC, Raleigh NC, Tampa FL, Orlando FL, Phoenix AZ, Denver CO, Columbus OH
 
 ## Content
-- Blog: https://cyberstarit.com/blog (80+ articles on IT solutions for SMBs)
+- Blog: https://cyberstarit.com/blog (100 articles on IT solutions for SMBs)
 - Sitemap: https://cyberstarit.com/sitemap.xml
+- Topics: VoIP/phone systems, hardware procurement, EDR, MDR, backup and disaster recovery, patch management, cybersecurity for small business, IT buying guides
