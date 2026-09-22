@@ -9,6 +9,11 @@ on:
       - 'src/data/cityPages.ts'
       - 'src/data/blogClusters.ts'
 
+# The workflow commits the generated sitemap back to main. Repository defaults
+# are read-only, so grant only the write scope required for that push.
+permissions:
+  contents: write
+
 jobs:
   rebuild-sitemap:
     runs-on: ubuntu-latest
